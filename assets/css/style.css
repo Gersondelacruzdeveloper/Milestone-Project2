@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-image: url("../images/background-plain.png");
+    background-image: url("../images/background.png");
     background-color:var(--gold);
     background-repeat: no-repeat;
     background-position: center;
