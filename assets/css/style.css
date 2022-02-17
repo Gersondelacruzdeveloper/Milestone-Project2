@@ -28,3 +28,21 @@ a {
     text-decoration: none;
     color: var(--concrete);
 }
+
+/* -------------------------------------------------------- Harry potter flying Animation */
+
+
+#flying-animation img{
+    position: relative;
+    animation: flying-harry 10s infinite normal ease;
+    width:150px;
+    height:150px;
+}
+
+/* -------------------------------------------------------------------- Animation */
+@keyframes flying-harry  {
+    0% {left:0%; top:0px}
+    25% {top:300px;}
+    50%{top:0px}
+    100% {left:100%;}
+}
