@@ -1,6 +1,13 @@
+
+/* CDN Fonts import */
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+
 /* -------------------------------------------------------------------- Variables */
 :root {
     --gold:#f1bf58;
+    --sun:#fabc11;
+    --black:black;
+
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -22,11 +29,11 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Harry Potter', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: var(--concrete);
 }
 
 /* -------------------------------------------------------- Harry potter flying Animation */
@@ -39,25 +46,42 @@ a {
     height:150px;
 }
 
+/* -------------------------------------------------------- Home section*/
+
+#game-name-img{
+    display: block;
+    width:50%;
+    margin-top:10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* -------------------------------------------------------------------- Animation */
+
 @keyframes flying-harry  {
     0% {left:0px; top:0px}
     25% {top:300px;}
     50%{top:0px}
-    100% {left: 100%;}
+    100% {top:0px; left: 90%;}
 }
 
 /* -------------------------------------------------------------------- Media queries */
 
-/* Animation media queries */
-
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
+   
+    #game-name-img{
+        width:100%;
+        margin-top:35%;
+        padding: 10px;
+    }
+
+    /* Animation media queries */
     @keyframes flying-harry  {
         0% {left:0px; top:0px}
         25% {top:300px;}
         50%{top:0px}
-        100% {left: 55%;}
+        100% {top:0px; left: 55%;}
     }
-
 }
