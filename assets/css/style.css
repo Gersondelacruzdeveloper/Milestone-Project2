@@ -33,7 +33,7 @@ a {
 
 
 #flying-animation img{
-    position: relative;
+    position: absolute;
     animation: flying-harry 10s infinite normal ease;
     width:150px;
     height:150px;
@@ -41,8 +41,23 @@ a {
 
 /* -------------------------------------------------------------------- Animation */
 @keyframes flying-harry  {
-    0% {left:0%; top:0px}
+    0% {left:0px; top:0px}
     25% {top:300px;}
     50%{top:0px}
-    100% {left:100%;}
+    100% {left: 100%;}
+}
+
+/* -------------------------------------------------------------------- Media queries */
+
+/* Animation media queries */
+
+/* Small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    @keyframes flying-harry  {
+        0% {left:0px; top:0px}
+        25% {top:300px;}
+        50%{top:0px}
+        100% {left: 55%;}
+    }
+
 }
