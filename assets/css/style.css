@@ -38,7 +38,6 @@ a {
 
 /* -------------------------------------------------------- Harry potter flying Animation */
 
-
 #flying-animation img{
     position: absolute;
     animation: flying-harry 10s infinite normal ease;
@@ -56,15 +55,24 @@ a {
     margin-right: auto;
 }
 
+#start-button-img{
+    display: block;
+    width:20%;
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: animated-start-btn 20s linear infinite;
+}
 
 /* -------------------------------------------------------------------- Animation */
 
-@keyframes flying-harry  {
+@keyframes flying-harry{
     0% {left:0px; top:0px}
     25% {top:300px;}
     50%{top:0px}
     100% {top:0px; left: 90%;}
 }
+
 
 /* -------------------------------------------------------------------- Media queries */
 
@@ -75,6 +83,9 @@ a {
         width:100%;
         margin-top:35%;
         padding: 10px;
+    }
+    #start-button-img{
+        width:50%;
     }
 
     /* Animation media queries */
