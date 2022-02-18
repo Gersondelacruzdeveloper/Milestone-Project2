@@ -1,7 +1,4 @@
 
-/* CDN Fonts import */
-@import url('http://fonts.cdnfonts.com/css/harry-potter');
-
 /* -------------------------------------------------------------------- Variables */
 :root {
     --gold:#f1bf58;
@@ -29,7 +26,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Harry Potter', sans-serif;
 }
 
 a {
@@ -61,8 +57,38 @@ a {
     margin-top:5%;
     margin-left: auto;
     margin-right: auto;
-    animation: animated-start-btn 20s linear infinite;
 }
+
+/* -------------------------------------------------------- footer section*/
+footer{
+    position: fixed;
+    bottom: 15px;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+#copyright-container p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#social-media-links a{
+    font-size: 40px;
+    color:black;
+    margin:10px;
+}
+
+#social-media-links{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    
+}
+
 
 /* -------------------------------------------------------------------- Animation */
 
@@ -79,6 +105,7 @@ a {
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
    
+    /* home */
     #game-name-img{
         width:100%;
         margin-top:35%;
@@ -86,6 +113,22 @@ a {
     }
     #start-button-img{
         width:50%;
+    }
+    
+    /* footer*/
+    footer{
+        width:90%;
+        grid-template-columns: auto;
+        justify-content: center;
+        column-gap: 0;
+        row-gap: 10px;
+        padding:10px;
+    }
+    #copyright-container p{
+        font-size: 20px;
+    }
+    #social-media-links a{
+        font-size: 30px;
     }
 
     /* Animation media queries */
