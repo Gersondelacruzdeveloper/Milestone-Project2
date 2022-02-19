@@ -59,6 +59,16 @@ a {
     margin-top:5%;
 }
 
+.wand-container{
+ text-align: center;
+ margin-top:-5%;
+ margin-left: -35%;
+}
+
+#wand{
+    width:200px;
+}
+
 
 /* -------------------------------------------------------- footer section*/
 footer{
@@ -112,7 +122,7 @@ footer{
         padding: 10px;
     }
     #start-button-img{
-        width:50%;
+        width:50%; 
     }
     
     /* footer*/
