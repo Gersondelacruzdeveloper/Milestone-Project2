@@ -77,12 +77,20 @@ a {
     margin-right: auto;
 }
 
-#start-button-img{
-    width:20%;
+#start-btn{
+  width:250px;
+  background-color:transparent;
+  margin-top: 5%;
+  border: none;
+  transform: translateY(-6px);
 }
-.start-btn-container{
-    text-align:center;
-    margin-top:5%;
+#start-btn img{
+    width:100%;
+}
+
+#start-btn:active {
+    transform: translateY(-2px);
+  
 }
 
 .wand-container{
@@ -177,18 +185,22 @@ footer{
         margin-top:35%;
         padding: 10px;
     }
-    #start-button-img{
-        width:50%; 
-    }
+
     .wand-container{
         text-align: center;
         margin-top:5%;
         margin-left: -35%;
-       }
+    }
        
-       #wand{
-           width:150px;
-       }
+    #wand{
+        width:150px;
+    }
+
+    #start-btn{
+        width:150px;
+        background-color:transparent;
+    }
+
        
     /* footer*/
     footer{
