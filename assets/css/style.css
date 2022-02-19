@@ -79,6 +79,7 @@ footer{
     grid-template-columns: auto;
     justify-content: center;
     padding: 20px;
+    border:2px solid red;
 }
 
 
@@ -124,10 +125,18 @@ footer{
     #start-button-img{
         width:50%; 
     }
-    
+    .wand-container{
+        text-align: center;
+        margin-top:5%;
+        margin-left: -35%;
+       }
+       
+       #wand{
+           width:150px;
+       }
+       
     /* footer*/
     footer{
-        width:90%;
         grid-template-columns: auto;
         justify-content: center;
         column-gap: 0;
