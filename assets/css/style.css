@@ -57,6 +57,16 @@ a {
     right:0;
     padding: 20px;
 }
+
+#header-instruction-container{
+    text-align: center;
+}
+#header-instruction-container p{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 1%;
+}
 /* -------------------------------------------------------- Home section*/
 
 #game-name-img{
@@ -128,6 +138,17 @@ footer{
 
 /* -------------------------------------------------------------------- Media queries */
 
+
+/* Medium devices (landscape tablets, from 1025px to 768px) */
+@media only screen and (max-width: 919px) {
+    #header-instruction-container p{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+
+}
+
+
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
     /* header */
@@ -145,6 +166,11 @@ footer{
          right:0;
          padding: 20px;
      }
+     #header-instruction-container p{
+        font-size: 25px;
+        margin-top: 20%;
+    }
+
     /* home */
     #game-name-img{
         width:100%;
