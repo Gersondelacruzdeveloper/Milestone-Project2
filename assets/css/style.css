@@ -41,6 +41,22 @@ a {
     height:150px;
 }
 
+
+/* -------------------------------------------------------- header section */
+#timer{
+   width:200px;
+   position: absolute;
+   top:0;
+   left:0;
+   padding: 20px;
+}
+#points{
+    width:200px;
+    position:absolute ;
+    top:0;
+    right:0;
+    padding: 20px;
+}
 /* -------------------------------------------------------- Home section*/
 
 #game-name-img{
@@ -114,7 +130,21 @@ footer{
 
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
-   
+    /* header */
+    #timer{
+        width:150px;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 20px;
+     }
+     #points{
+         width:150px;
+         position:absolute ;
+         top:0;
+         right:0;
+         padding: 20px;
+     }
     /* home */
     #game-name-img{
         width:100%;
