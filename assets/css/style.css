@@ -39,6 +39,7 @@ a {
     animation: flying-harry 10s infinite normal ease;
     width:150px;
     height:150px;
+    z-index: 1;
 }
 
 
@@ -83,6 +84,7 @@ a {
   margin-top: 5%;
   border: none;
   transform: translateY(-6px);
+  z-index: -1;
 }
 #start-btn img{
     width:100%;
