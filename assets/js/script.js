@@ -8,7 +8,7 @@ let card = document.getElementById('card')
  * this fuction start the Game 
  */
  function startGame(){
-    toggle()
+    toggleVisibility()
 }
 
 
@@ -18,7 +18,7 @@ let card = document.getElementById('card')
  * and display none the main content from index.html
  */
 
- function toggle(){
+function toggleVisibility(){
     home.style.display = "none"
     harryAnimation.style.display = "none"
     header.style.display = "block"
