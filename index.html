@@ -40,21 +40,59 @@
       <img src="./assets/images/flying-harry-potter.png" alt="flying harry potter">
     </div>
 
-    <main>
+     <!--header section-->
+     <header id="header">
+      <img id="timer" src="./assets/images/timer.png" alt="A Wand">
+      <div id="header-instruction-container"> 
+       <p>Flip the cards to find the pairs</p>
+      </div>
+      <img id="points" src="./assets/images/points.png" alt="A Wand">
+    </header>
 
+    <main>
       <!--Home section-->
        <section id="home">
-          <img id="game-name-img" src="./assets/images/game-name.png" alt="Game Name">
+
+        <img id="game-name-img" src="./assets/images/game-name.png" alt="Game Name">
 
         <div class="text-center">
-         <button id="start-btn"><img src="./assets/images/start-button.png" 
+         <button id="start-btn" onclick="startGame()"><img src="./assets/images/start-button.png" 
             alt="Start Button image"></button>
-        </div>
+         </div>
 
          <div class="wand-container">
          <img id="wand" src="./assets/images/wand.png" alt="A Wand">
          </div>
-      </section>
+       </section>
+
+     <!--card section-->
+       <section id="card">
+
+         <div id="card-container">
+          <di class="memory-card">
+          <img class="front-card" src="/assets/images/cards/bellatrix.png" alt="back of card">
+          <img class="back-card" src="/assets/images/cards/back-of-cards.png" alt="back of card">
+          </di>
+
+          <di class="memory-card">
+            <img class="front-card" src="/assets/images/cards/bellatrix.png" alt="back of card">
+            <img class="back-card" src="/assets/images/cards/back-of-cards.png" alt="back of card">
+            </di>
+
+            <di class="memory-card">
+              <img class="front-card" src="/assets/images/cards/bellatrix.png" alt="back of card">
+              <img class="back-card" src="/assets/images/cards/back-of-cards.png" alt="back of card">
+            </di>
+
+            <di class="memory-card">
+                <img class="front-card" src="/assets/images/cards/bellatrix.png" alt="back of card">
+                <img class="back-card" src="/assets/images/cards/back-of-cards.png" alt="back of card">
+            </di>
+
+         </div>
+
+       </section>
+
     </main>
 
 
@@ -98,6 +136,6 @@
    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
    crossorigin="anonymous"></script>
     <!-- Local Javascript -->
-    <script src=""></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
