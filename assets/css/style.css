@@ -155,6 +155,10 @@ justify-content: center;
   transform: rotateY(180deg);
 }
 
+/* this class is added to the card that match*/
+.turn-over{
+    transform: rotateY(180deg);
+}
 /* -------------------------------------------------------- footer section */
 
 /* code below taken from https://www.w3schools.com/howto/howto_css_flip_card.asp */

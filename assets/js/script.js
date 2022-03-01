@@ -7,6 +7,9 @@ let header = document.getElementById('header');
 let cardSection = document.getElementById('section-card');
 let cardContainer = document.getElementById('card-container');
 let flipCardInner = document.getElementsByClassName('flip-card-inner');
+let isTurnOver  = false;
+let lockCard = false
+let firstCard, SecondCard;
 //Set amount of cards to be displyed 
 let Cardcount = 8
 
@@ -78,5 +81,27 @@ function createCard(CardList, Cardcount){
 
 
 function rotateCard(){
-console.log('click')
+  if(lockCard) return;
+  if(this === firstCard) return;
+  this.classList.add('turn-over')
+  console.log(this)
+  if(!isTurnOver){
+      isTurnOver= true;
+      firstCard = this
+  }else{
+      isTurnOver = false;
+      secondCard = this
+      if(firstCard.getAttribute("data-name") === 
+      secondCard.getAttribute("data-name")){
+      firstCard.removeEventListener('click', rotateCard);
+      secondCard.removeEventListener('click', rotateCard);
+      }else{
+          lockCard = true
+          setTimeout(function(){
+              firstCard.classList.remove('turn-over')
+              secondCard.classList.remove('turn-over')
+              lockCard = false
+          }, 1000)
+      }
+  }
 }
