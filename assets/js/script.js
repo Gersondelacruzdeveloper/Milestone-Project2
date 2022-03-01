@@ -1,11 +1,12 @@
 /**
- * Game variables to display hide and screen, 
+ * Game variables to display and hide screen, 
  */
 let harryAnimation = document.getElementById('flying-animation');
 let home = document.getElementById('home');
 let header = document.getElementById('header');
 let cardSection = document.getElementById('section-card');
 let cardContainer = document.getElementById('card-container');
+let flipCardInner = document.getElementsByClassName('flip-card-inner');
 //Set amount of cards to be displyed 
 let Cardcount = 8
 
@@ -67,4 +68,15 @@ function createCard(CardList, Cardcount){
      // Add a duplicate cards
      cardContainer.innerHTML += html
   }
+
+  //Add event listener to all cards
+  for(let i=0; i<flipCardInner.length; i++){
+    flipCardInner[i].addEventListener('click', rotateCard)
+ }
+
+}
+
+
+function rotateCard(){
+console.log('click')
 }
