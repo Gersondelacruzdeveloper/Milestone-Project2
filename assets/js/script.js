@@ -1,21 +1,23 @@
-//variables
+/**
+ * Game variables to display hide and screen
+ */
 let harryAnimation = document.getElementById('flying-animation');
 let home = document.getElementById('home');
 let header = document.getElementById('header');
 let card = document.getElementById('section-card');
 
 /**
- * this fuction start the Game 
+ * Start the Game as soon as the main button from index.html is clicked
  */
  function startGame(){
-    toggleVisibility()
+   toggleScreen()
 }
 
  /**
- * This funtion display header element
- * and display none the main content from index.html
+ * Display header, cards and hide the main content from index.html 
+ * including harry Animation
  */
-  function toggleVisibility(){
+  function toggleScreen(){
     home.style.display = "none"
     harryAnimation.style.display = "none"
     header.style.display = "block"
