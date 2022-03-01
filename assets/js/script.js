@@ -35,6 +35,7 @@ const CardList = [
  function startGame(){
    toggleScreen()
    createCard(CardList, Cardcount)
+   shuffleCard()
 }
 
  /**
@@ -103,5 +104,14 @@ function rotateCard(){
               lockCard = false
           }, 1000)
       }
+  }
+}
+
+/**
+ * this function shuffle the cards
+ */
+ const shuffleCard = () => {
+  for (let i = cardContainer.children.length; i >= 0; i--) {
+      cardContainer.appendChild(cardContainer.children[Math.random() * i | 0]);
   }
 }
