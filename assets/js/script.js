@@ -5,6 +5,7 @@ let harryAnimation = document.getElementById('flying-animation');
 let home = document.getElementById('home');
 let header = document.getElementById('header');
 let cardSection = document.getElementById('section-card');
+let cardContainer = document.getElementById('card-container');
 //Set amount of cards to be displyed 
 let Cardcount = 8
 
@@ -49,7 +50,6 @@ const CardList = [
  * @param {integer} Cardcount - Provide the amount of card that need to be display
  */
 function createCard(CardList, Cardcount){
-  let cardContainer = document.getElementById('card-container');
   for (let i = 0; i< CardList.length - Cardcount; i++){
      let html = `
      <div class="flip-card">
