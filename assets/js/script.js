@@ -4,10 +4,9 @@
 let harryAnimation = document.getElementById('flying-animation');
 let home = document.getElementById('home');
 let header = document.getElementById('header');
-let card= document.getElementById('section-card');
+let cardSection = document.getElementById('section-card');
 //Set amount of cards to be displyed 
 let Cardcount = 8
-
 
 // Card list Information, include name and images
 const CardList = [
@@ -34,14 +33,14 @@ const CardList = [
 }
 
  /**
- * Display header, cards and hide the main content from index.html 
+ * Display header, card section and hide the main content from index.html 
  * including harry Animation
  */
   function toggleScreen(){
     home.style.display = "none"
     harryAnimation.style.display = "none"
     header.style.display = "block"
-    card.style.display = "block"
+    cardSection.style.display = "block"
 }
 
 /**
