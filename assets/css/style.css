@@ -26,6 +26,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 a {
@@ -138,8 +139,10 @@ a {
 
 
 
+/* -------------------------------------------------------- footer section */
 
-/* -------------------------------------------------------- footer section*/
+/* code below taken from https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
 footer{
     position: fixed;
     bottom: 15px;
@@ -194,6 +197,7 @@ footer{
 
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
+
     /* header */
     #timer{
         width:150px;
@@ -235,17 +239,12 @@ footer{
         width:150px;
         background-color:transparent;
     }
-
-    #card-container{
-        width:100%;
-        margin: 20% auto;
+     /* card section */
+     .flip-card {
+        width: 85px;
+        height: 110px;
     }
 
-    .memory-card{
-        transition: transform 0.9s;
-    }
-
-       
     /* footer*/
     footer{
         grid-template-columns: auto;
