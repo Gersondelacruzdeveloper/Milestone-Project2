@@ -1,28 +1,13 @@
 /**
- * Game variables to display hide and screen
+ * Game variables to display hide and screen, 
  */
 let harryAnimation = document.getElementById('flying-animation');
 let home = document.getElementById('home');
 let header = document.getElementById('header');
-let card = document.getElementById('section-card');
+let card= document.getElementById('section-card');
+//Set amount of cards to be displyed 
+let Cardcount = 8
 
-/**
- * Start the Game as soon as the main button from index.html is clicked
- */
- function startGame(){
-   toggleScreen()
-}
-
- /**
- * Display header, cards and hide the main content from index.html 
- * including harry Animation
- */
-  function toggleScreen(){
-    home.style.display = "none"
-    harryAnimation.style.display = "none"
-    header.style.display = "block"
-    card.style.display = "block"
-}
 
 // Card list Information, include name and images
 const CardList = [
@@ -39,3 +24,48 @@ const CardList = [
   {name:"snape", image:"snape.png"},
   {name:"voldermore", image:"voldermore.png"},
 ];
+
+/**
+ * Start the Game as soon as the main button from index.html is clicked
+ */
+ function startGame(){
+   toggleScreen()
+   createCard(CardList, Cardcount)
+}
+
+ /**
+ * Display header, cards and hide the main content from index.html 
+ * including harry Animation
+ */
+  function toggleScreen(){
+    home.style.display = "none"
+    harryAnimation.style.display = "none"
+    header.style.display = "block"
+    card.style.display = "block"
+}
+
+/**
+ * Create cards base on the CardList imformation
+ * @param {List} CardList - the card list imformation
+ * @param {integer} Cardcount - Provide the amount of card that need to be display
+ */
+function createCard(CardList, Cardcount){
+  let cardContainer = document.getElementById('card-container');
+  for (let i = 0; i< CardList.length - Cardcount; i++){
+     let html = `
+     <div class="flip-card">
+         <div class="flip-card-inner" data-name="${CardList[i].name}">
+           <div class="flip-card-front">
+             <img src="./assets/images/cards/${CardList[i].image}" alt="image of ${CardList[i].name}">
+           </div>
+           <div class="flip-card-back">
+           <img src="./assets/images/cards/back-of-cards.png" alt="Avatar">
+           </div>
+         </div>
+       </div>
+     `
+     cardContainer.innerHTML += html
+     // Add a duplicate cards
+     cardContainer.innerHTML += html
+  }
+}
