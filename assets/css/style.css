@@ -75,7 +75,7 @@ a {
 position: absolute;
 font-weight: bolder;
 font-size: 30px;
-right:45px;
+right:40px;
 top:68px;
 }
 
@@ -273,6 +273,7 @@ footer{
         font-size: 25px;
         margin-top: 20%;
     }
+
     /* home */
     #game-name-img{
         width:100%;

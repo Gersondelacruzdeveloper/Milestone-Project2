@@ -10,6 +10,7 @@ let flipCardInner = document.getElementsByClassName('flip-card-inner');
 let isTurnOver  = false;
 let lockCard = false
 let firstCard, SecondCard;
+let points = 10;
 
 //variable for the timer
 let timeLeft = 30
@@ -41,7 +42,7 @@ const CardList = [
  function startGame(){
    toggleScreen()
    createCard(CardList, Cardcount)
-   shuffleCard()
+   //shuffleCard()
    countdown()
 }
 
@@ -111,6 +112,7 @@ function matchCard(){
   if(firstCard.getAttribute("data-name") === 
   secondCard.getAttribute("data-name")){
     removeListener()
+    incrementScore()
   }else{
     //wait 10 seconds and then remove the turn over class
     // so 
@@ -146,12 +148,13 @@ function removeClass(){
 /**
  *  Shuffle the cards
  */
+/*
  const shuffleCard = () => {
   for (let i = cardContainer.children.length; i >= 0; i--) {
       cardContainer.appendChild(cardContainer.children[Math.random() * i | 0]);
   }
 }
-
+*/
 
 /**
  * Count dowm timer
@@ -165,4 +168,10 @@ if(timeLeft === 0){
 }
 }
 
-
+/**
+ * Increment score by 10 every time the user match a card
+ */
+function incrementScore(){
+  document.getElementById('points').innerText = points;
+  points = points + 10;
+}
