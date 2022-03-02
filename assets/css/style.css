@@ -45,11 +45,8 @@ a {
 
 
 /* -------------------------------------------------------- header section */
-#timer-container {
-    position: relative;
-}
 
-#timer-container img{
+#timer-img{
    width:200px;
    position: absolute;
    top:0;
@@ -66,13 +63,22 @@ a {
     top:10px;
 }
 
-#points{
+#points-img{
     width:200px;
     position:absolute ;
-    top:0;
     right:0;
+    top:0;
     padding: 20px;
 }
+
+#points{
+position: absolute;
+font-weight: bolder;
+font-size: 30px;
+right:45px;
+top:68px;
+}
+
 
 #header-instruction-container{
     text-align: center;
@@ -234,24 +240,39 @@ footer{
 
     /* header */
     #timer{
+        font-size: 25px;
+        left:50px;
+        line-height: 75px;
+        top:10px;
+    }
+
+    #timer-img{
         width:150px;
         position: absolute;
         top:0;
         left:0;
         padding: 20px;
      }
+
      #points{
+        position: absolute;
+        font-weight: bolder;
+        font-size: 25px;
+        right:35px;
+        top:50px;
+    }
+     #points-img{
          width:150px;
          position:absolute ;
          top:0;
          right:0;
          padding: 20px;
      }
+
      #header-instruction-container p{
         font-size: 25px;
         margin-top: 20%;
     }
-
     /* home */
     #game-name-img{
         width:100%;

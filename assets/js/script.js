@@ -159,9 +159,10 @@ function removeClass(){
 function countdown(){
 if(timeLeft === 0){
   clearTimeout(interval)
-  alert('yes')
 }else{
   timer.innerHTML = '0 :' + ' ' +  timeLeft
   timeLeft --;
 }
 }
+
+
