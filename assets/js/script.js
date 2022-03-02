@@ -10,6 +10,12 @@ let flipCardInner = document.getElementsByClassName('flip-card-inner');
 let isTurnOver  = false;
 let lockCard = false
 let firstCard, SecondCard;
+
+//variable for the timer
+let timeLeft = 30
+let interval = setInterval(countdown, 1000)
+let timer = document.getElementById('timer')
+
 //Set amount of cards to be displyed 
 let Cardcount = 8
 
@@ -36,6 +42,7 @@ const CardList = [
    toggleScreen()
    createCard(CardList, Cardcount)
    shuffleCard()
+   countdown()
 }
 
  /**
@@ -143,4 +150,18 @@ function removeClass(){
   for (let i = cardContainer.children.length; i >= 0; i--) {
       cardContainer.appendChild(cardContainer.children[Math.random() * i | 0]);
   }
+}
+
+
+/**
+ * Count dowm timer
+ */
+function countdown(){
+if(timeLeft === 0){
+  clearTimeout(interval)
+  alert('yes')
+}else{
+  timer.innerHTML = '0 :' + ' ' +  timeLeft
+  timeLeft --;
+}
 }
