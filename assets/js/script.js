@@ -80,35 +80,64 @@ function createCard(CardList, Cardcount){
 
 }
 
-
+/**
+ * Rotate card when card is click
+ * get the first card and second card
+ */
 function rotateCard(){
   if(lockCard) return;
   if(this === firstCard) return;
   this.classList.add('turn-over')
-  console.log(this)
   if(!isTurnOver){
       isTurnOver= true;
       firstCard = this
   }else{
       isTurnOver = false;
       secondCard = this
-      if(firstCard.getAttribute("data-name") === 
-      secondCard.getAttribute("data-name")){
-      firstCard.removeEventListener('click', rotateCard);
-      secondCard.removeEventListener('click', rotateCard);
-      }else{
-          lockCard = true
-          setTimeout(function(){
-              firstCard.classList.remove('turn-over')
-              secondCard.classList.remove('turn-over')
-              lockCard = false
-          }, 1000)
-      }
-  }
+      matchCard()
 }
 
 /**
- * this function shuffle the cards
+ * Match first and second card and keep it revealed
+ */
+function matchCard(){
+  if(firstCard.getAttribute("data-name") === 
+  secondCard.getAttribute("data-name")){
+    removeListener()
+  }else{
+    //wait 10 seconds and then remove the turn over class
+    // so 
+    lockCard = true
+    removeClass()
+  }
+}
+}
+
+
+/**
+ * Remove the event listeners of the function rotateCard 
+ */
+function removeListener(){
+  firstCard.removeEventListener('click', rotateCard);
+  secondCard.removeEventListener('click', rotateCard);
+}
+
+
+/**
+ * Remove turn over class from cards 
+ */
+function removeClass(){
+  setTimeout(function(){
+    firstCard.classList.remove('turn-over')
+    secondCard.classList.remove('turn-over')
+    lockCard = false
+}, 1000)
+}
+
+
+
+/**
+ *  Shuffle the cards
  */
  const shuffleCard = () => {
   for (let i = cardContainer.children.length; i >= 0; i--) {
