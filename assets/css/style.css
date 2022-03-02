@@ -45,13 +45,27 @@ a {
 
 
 /* -------------------------------------------------------- header section */
-#timer{
+#timer-container {
+    position: relative;
+}
+
+#timer-container img{
    width:200px;
    position: absolute;
    top:0;
    left:0;
    padding: 20px;
 }
+
+#timer{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    left:70px;
+    line-height: 100px;
+    top:10px;
+}
+
 #points{
     width:200px;
     position:absolute ;
