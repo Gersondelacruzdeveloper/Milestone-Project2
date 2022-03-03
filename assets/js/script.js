@@ -162,6 +162,7 @@ function removeClass(){
 function countdown(){
 if(timeLeft === 0){
   clearTimeout(interval)
+  GameOver()
 }else{
   timer.innerHTML = '0 :' + ' ' +  timeLeft
   timeLeft --;
@@ -174,4 +175,20 @@ if(timeLeft === 0){
 function incrementScore(){
   document.getElementById('points').innerText = points;
   points = points + 10;
+}
+
+
+/**
+ * Run modal when the user have lost
+ */
+function GameOver(){
+let points = parseInt(document.getElementById('points').innerText)
+  if(points !== 40){
+    OpenModal("#GameOverModal")
+}
+}
+
+// Open modal
+function OpenModal(modalId) {
+  $(modalId).modal('show');
 }
