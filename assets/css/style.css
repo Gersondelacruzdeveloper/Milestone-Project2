@@ -4,6 +4,7 @@
     --gold:#f1bf58;
     --sun:#fabc11;
     --black:black;
+    --gold-lighter:hsl(40, 75%, 78%);
 
 }
 
@@ -210,6 +211,26 @@ footer{
     justify-content: center;
     grid-template-columns: auto auto auto auto;
     
+}
+
+
+/* -------------------------------------------------------------------- Modals */
+#game-over{
+    font-family: 'Harry Potter', sans-serif;                                             
+}
+.sun-color{
+    color: var(--sun);
+}
+.modal-body{
+    text-align: center;
+    background-color: var(--gold-lighter);
+}
+.modal-body button{
+    background-color: var(--gold);
+}
+
+.modal-body button:hover{
+    background-color: var(--sun);
 }
 
 /* -------------------------------------------------------------------- Animation */
