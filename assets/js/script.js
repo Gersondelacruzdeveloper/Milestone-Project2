@@ -198,11 +198,11 @@ let timer = document.getElementById('timer')
 
 //Call the game over modal  and execute restartTimer function
 let restart = document.getElementById("restart")
-restart.addEventListener('click', restartTimer)
+restart.addEventListener('click', restartGame)
 
 /**
  * Restart Game
  */
-function restartTimer(){
+function restartGame(){
   location.reload();
 }
