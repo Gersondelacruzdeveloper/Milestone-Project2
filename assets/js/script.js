@@ -13,7 +13,6 @@
  let points = 10;
  //variable for the timer
 let timeLeft = 4
-let interval = setInterval(countdown, 1000)
 let timer = document.getElementById('timer')
 
  //Set amount of cards to be displyed 
@@ -184,25 +183,26 @@ let timer = document.getElementById('timer')
   * Count dowm timer
   */
   function countdown(){
-    if(timeLeft === 0){
-      console.log('timeLeft1', timeLeft)
-      timer.innerHTML = '0 :' + ' ' +  0
-      clearInterval(interval)
-      GameOver()
-    }else{
-      console.log('timeLeft2', timeLeft)
-      timer.innerHTML = '0 :' + ' ' +  timeLeft
-      timeLeft --;
-    }
+    let interval = setInterval(function(){
+      if(timeLeft === 0){
+        timer.innerHTML = '0 :' + ' ' +  0
+        clearInterval(interval)
+        GameOver()
+      }else{
+        timer.innerHTML = '0 :' + ' ' +  timeLeft
+        timeLeft --;
+      }
+    }, 1000)
   }
 
 //Call the game over modal  and execute restartTimer function
 let restart = document.getElementById("restart")
-restart.addEventListener('click', restartGame)
+restart.addEventListener('click', restartTimer)
 
 /**
  * Restart Game
  */
-function restartGame(){
-  location.reload();
+function restartTimer(){
+  timeLeft = 4
+  countdown()
 }
