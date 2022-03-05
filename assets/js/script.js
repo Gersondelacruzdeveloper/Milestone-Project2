@@ -257,7 +257,14 @@ function level2Game(){
     setTimeout(function(){
       OpenModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
-      clearInterval(interval)
+      stopcountdown()
   }, 1000)
   }
+}
+
+/**
+ * stop the timer
+ */
+function stopcountdown(){
+  clearInterval(interval)
 }
