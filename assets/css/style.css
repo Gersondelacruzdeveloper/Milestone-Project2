@@ -34,8 +34,10 @@ a {
     text-decoration: none;
 }
 
-/* -------------------------------------------------------- Harry potter flying Animation */
 
+/* -------------------------------------------------------- Index.html page*/
+
+/*Harry potter flying Animation */
 #flying-animation img{
     position: absolute;
     animation: flying-harry 10s infinite normal ease;
@@ -44,8 +46,48 @@ a {
     z-index: 1;
 }
 
+/*Home section*/
+#game-name-img{
+    display: block;
+    width:50%;
+    margin-top:10%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* -------------------------------------------------------- header section */
+#start-btn img{
+    margin-top: 5%;
+    transform: translateY(-6px);
+    z-index: -1;
+    width:250px;
+    background-color:transparent;
+}
+#start-btn img:active {
+    transform: translateY(-2px);
+  
+}
+
+.wand-container{
+ text-align: center;
+ margin-top:-5%;
+ margin-left: -35%;
+}
+
+#wand{
+    width:200px;
+}
+
+/* --------------------------------------------- Animation keyframes*/
+
+@keyframes flying-harry{
+    0% {left:0px; top:0px}
+    25% {top:300px;}
+    50%{top:0px}
+    100% {top:0px; left: 90%;}
+}
+
+/* -------------------------------------------------------------------- Game Page */
+/*header section */
 
 #timer-img{
    width:200px;
@@ -80,7 +122,6 @@ right:40px;
 top:68px;
 }
 
-
 #header-instruction-container{
     text-align: center;
 }
@@ -91,45 +132,7 @@ top:68px;
     margin-top: 1%;
 }
 
-
-/* -------------------------------------------------------- Home section*/
-
-#game-name-img{
-    display: block;
-    width:50%;
-    margin-top:10%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#start-btn{
-  width:250px;
-  background-color:transparent;
-  margin-top: 5%;
-  border: none;
-  transform: translateY(-6px);
-  z-index: -1;
-}
-#start-btn img{
-    width:250px;
-    background-color:transparent;
-}
-#start-btn:active {
-    transform: translateY(-2px);
-  
-}
-
-.wand-container{
- text-align: center;
- margin-top:-5%;
- margin-left: -35%;
-}
-
-#wand{
-    width:200px;
-}
-/* -------------------------------------------------------- card section*/
-
+/*card section*/
 #card-container{
 display:grid;
 grid-template-columns:auto auto auto auto;
@@ -175,10 +178,29 @@ justify-content: center;
 .turn-over{
     transform: rotateY(180deg);
 }
+
+
+/* -------------------------------------------------------------------- Modals */
+#game-over{
+    font-family: 'Harry Potter', sans-serif;                                             
+}
+.sun-color{
+    color: var(--sun);
+}
+.modal-body{
+    text-align: center;
+    background-color: var(--gold-lighter);
+}
+.modal-body button{
+    background-color: var(--gold);
+}
+
+.modal-body button:hover{
+    background-color: var(--sun);
+}
+
+
 /* -------------------------------------------------------- footer section */
-
-/* code below taken from https://www.w3schools.com/howto/howto_css_flip_card.asp */
-
 footer{
     position: fixed;
     bottom: 15px;
@@ -209,40 +231,12 @@ footer{
 }
 
 
-/* -------------------------------------------------------------------- Modals */
-#game-over{
-    font-family: 'Harry Potter', sans-serif;                                             
-}
-.sun-color{
-    color: var(--sun);
-}
-.modal-body{
-    text-align: center;
-    background-color: var(--gold-lighter);
-}
-.modal-body button{
-    background-color: var(--gold);
-}
-
-.modal-body button:hover{
-    background-color: var(--sun);
-}
-
-/* -------------------------------------------------------------------- Animation */
-
-@keyframes flying-harry{
-    0% {left:0px; top:0px}
-    25% {top:300px;}
-    50%{top:0px}
-    100% {top:0px; left: 90%;}
-}
-
-
 /* -------------------------------------------------------------------- Media queries */
 
 
 /* Medium devices (landscape tablets, from 1025px to 768px) */
 @media only screen and (max-width: 919px) {
+    /* ----------------------- Game Page media queries */
     #header-instruction-container p{
         font-size: 30px;
         margin-top: 10%;
@@ -253,7 +247,7 @@ footer{
 
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
-
+ /* ----------------------- Game Page media queries */
     /* header */
     #timer{
         font-size: 25px;
@@ -290,6 +284,13 @@ footer{
         margin-top: 20%;
     }
 
+     /* card section */
+     .flip-card {
+        width: 85px;
+        height: 110px;
+    }
+
+/* ----------------------- Index.html page media queries*/
     /* home */
     #game-name-img{
         width:100%;
@@ -311,13 +312,15 @@ footer{
         width:150px;
         background-color:transparent;
     }
-     /* card section */
-     .flip-card {
-        width: 85px;
-        height: 110px;
-    }
 
-    /* footer*/
+    /* Animation media queries */
+    @keyframes flying-harry  {
+        0% {left:0px; top:0px}
+        25% {top:300px;}
+        50%{top:0px}
+        100% {top:0px; left: 55%;}
+    }
+/* ----------------------- footer media queries*/
     footer{
         grid-template-columns: auto;
         justify-content: center;
@@ -330,13 +333,5 @@ footer{
     }
     #social-media-links a{
         font-size: 30px;
-    }
-
-    /* Animation media queries */
-    @keyframes flying-harry  {
-        0% {left:0px; top:0px}
-        25% {top:300px;}
-        50%{top:0px}
-        100% {top:0px; left: 55%;}
     }
 }
