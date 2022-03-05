@@ -90,9 +90,8 @@ top:68px;
     padding: 20px;
     margin-top: 1%;
 }
-#header{
-    display: none;
-}
+
+
 /* -------------------------------------------------------- Home section*/
 
 #game-name-img{
@@ -112,9 +111,9 @@ top:68px;
   z-index: -1;
 }
 #start-btn img{
-    width:100%;
+    width:250px;
+    background-color:transparent;
 }
-
 #start-btn:active {
     transform: translateY(-2px);
   
@@ -130,10 +129,6 @@ top:68px;
     width:200px;
 }
 /* -------------------------------------------------------- card section*/
-
-#section-card{
-    display: none;
-}
 
 #card-container{
 display:grid;
@@ -312,7 +307,7 @@ footer{
         width:150px;
     }
 
-    #start-btn{
+    #start-btn img{
         width:150px;
         background-color:transparent;
     }

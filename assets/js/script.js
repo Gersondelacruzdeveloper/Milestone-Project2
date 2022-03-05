@@ -1,6 +1,16 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  let timer = document.getElementById('timer')
+  timer.innerHTML = '0 :' + ' ' +  0
+  createCard(CardList, Cardcount)
+  OpenModal("#welcome-modal")
+  shuffleCard()
+})
+
 /**
  * Game variables to display and hide screen, 
  */
+ var modalPopUp = true
  let harryAnimation = document.getElementById('flying-animation');
  let home = document.getElementById('home');
  let header = document.getElementById('header');
@@ -12,7 +22,7 @@
  let firstCard, SecondCard;
  let points = 10;
  //variable for the timer
-let timeLeft = 4
+let timeLeft = 30
 let timer = document.getElementById('timer')
 
  //Set amount of cards to be displyed 
@@ -37,24 +47,13 @@ let timer = document.getElementById('timer')
  /**
   * Start the Game as soon as the main button from index.html is clicked
   */
+
+
   function startGame(){
-    toggleScreen()
-    createCard(CardList, Cardcount)
     //shuffleCard()
     countdown()
  }
- 
-  /**
-  * Display header, card section and hide the main content from index.html 
-  * including harry Animation
-  */
-   function toggleScreen(){
-     home.style.display = "none"
-     harryAnimation.style.display = "none"
-     header.style.display = "block"
-     cardSection.style.display = "block"
- }
- 
+
  /**
   * Create cards base on the CardList imformation
   * @param {List} CardList - the card list imformation
@@ -83,7 +82,6 @@ let timer = document.getElementById('timer')
    for(let i=0; i<flipCardInner.length; i++){
      flipCardInner[i].addEventListener('click', rotateCard)
   }
- 
  }
  
  /**
@@ -146,13 +144,13 @@ let timer = document.getElementById('timer')
  /**
   *  Shuffle the cards
   */
- /*
+
   const shuffleCard = () => {
    for (let i = cardContainer.children.length; i >= 0; i--) {
        cardContainer.appendChild(cardContainer.children[Math.random() * i | 0]);
    }
  }
- */
+
  
  
  /**
@@ -162,7 +160,15 @@ let timer = document.getElementById('timer')
    document.getElementById('points').innerText = points;
    points = points + 10;
  }
- 
+
+/**
+  * resetScore score to 0 every time the user start again
+  */
+ function resetScore(){
+  points = 0
+  document.getElementById('points').innerText = points;
+  points = points + 10;
+ }
  
  /**
   * Run modal when the user have lost
@@ -171,6 +177,7 @@ let timer = document.getElementById('timer')
  let points = parseInt(document.getElementById('points').innerText)
    if(points !== 40){
      OpenModal("#GameOverModal")
+     closeAllcards()
  }
  }
  
@@ -197,12 +204,27 @@ let timer = document.getElementById('timer')
 
 //Call the game over modal  and execute restartTimer function
 let restart = document.getElementById("restart")
-restart.addEventListener('click', restartTimer)
+restart.addEventListener('click', restartGame)
 
 /**
  * Restart Game
  */
-function restartTimer(){
-  timeLeft = 4
-  countdown()
+function restartGame(){
+   timeLeft = 30
+   countdown()
+   resetScore()
+   shuffleCard()
+   //location.reload()
+}
+
+
+/**
+ * flips back all cards with the class of turn-over
+ */
+function closeAllcards(){
+  for(let i=0; i<flipCardInner.length; i++){
+    flipCardInner[i].classList.remove('turn-over')
+    flipCardInner[i].addEventListener('click', rotateCard)
+
+ }
 }
