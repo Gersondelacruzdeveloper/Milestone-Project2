@@ -150,7 +150,7 @@ let interval = null
  function incrementScore(){
    document.getElementById('points').innerText = points;
    points = points + 10;
-   level2Game()
+   congratLevel()
  }
 
 /**
@@ -252,7 +252,7 @@ function lockScreenOpenModal(modalId, modalBtnId){
  * Open congratulation level 2 modal
  * Stop the the timer
  */
-function level2Game(){
+function congratLevel(){
   if(points === 50){
     setTimeout(function(){
       OpenModal("#level2-modal")
@@ -261,7 +261,6 @@ function level2Game(){
   }, 1000)
   }
 }
-
 
 /**
  * stop the timer
@@ -278,4 +277,3 @@ function resetCountDown(){
   document.getElementById('timer').innerText = 0
   countdown()
 }
-
