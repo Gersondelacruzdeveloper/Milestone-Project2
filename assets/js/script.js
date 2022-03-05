@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
  let timer = document.getElementById('timer')
  //Set amount of cards to be displyed 
  let Cardcount = 8
+
+let interval = null
  
  // Card list Information, include name and images
  const CardList = [
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   * Start the Game as soon as the main button from the welcome modal is clicked
   */
   function startGame(){
-    shuffleCard()
+    //shuffleCard()
     countdown()
  }
 
@@ -148,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
  function incrementScore(){
    document.getElementById('points').innerText = points;
    points = points + 10;
+   level2Game()
  }
 
 /**
@@ -180,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
   * Count dowm timer
   */
   function countdown(){
-    let interval = setInterval(function(){
+    interval = setInterval(function(){
       if(timeLeft === 0){
         timer.innerHTML = '0 :' + ' ' +  0
         clearInterval(interval)
@@ -243,4 +246,18 @@ function lockScreenOpenModal(modalId, modalBtnId){
      }
    });
 
+}
+
+/**
+ * Open congratulation level 2 modal
+ * Stop the the timer
+ */
+function level2Game(){
+  if(points === 50){
+    setTimeout(function(){
+      OpenModal("#level2-modal")
+      lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
+      clearInterval(interval)
+  }, 1000)
+  }
 }
