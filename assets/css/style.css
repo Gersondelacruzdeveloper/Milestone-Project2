@@ -5,7 +5,7 @@
     --sun:#fabc11;
     --black:black;
     --gold-lighter:hsl(40, 75%, 78%);
-
+    --harry-font:'Harry Potter', sans-serif; 
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -181,7 +181,7 @@ justify-content: center;
 
 /* -------------------------------------------------------------------- Modals */
 #title-modal{
-    font-family: 'Harry Potter', sans-serif;                                             
+    font-family: var(--harry-font);                                             
 }
 .sun-color{
     color: var(--sun);
