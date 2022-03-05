@@ -4,17 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
   timer.innerHTML = '0 :' + ' ' +  0
   createCard(CardList, Cardcount)
   OpenModal("#welcome-modal")
-  shuffleCard()
 })
 
 /**
- * Game variables to display and hide screen, 
+ * Game variables
  */
- var modalPopUp = true
- let harryAnimation = document.getElementById('flying-animation');
- let home = document.getElementById('home');
- let header = document.getElementById('header');
- let cardSection = document.getElementById('section-card');
  let cardContainer = document.getElementById('card-container');
  let flipCardInner = document.getElementsByClassName('flip-card-inner');
  let isTurnOver  = false;
@@ -22,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
  let firstCard, SecondCard;
  let points = 10;
  //variable for the timer
-let timeLeft = 30
-let timer = document.getElementById('timer')
-
+ let timeLeft = 30
+ let timer = document.getElementById('timer')
  //Set amount of cards to be displyed 
  let Cardcount = 8
  
@@ -45,12 +38,10 @@ let timer = document.getElementById('timer')
  ];
  
  /**
-  * Start the Game as soon as the main button from index.html is clicked
+  * Start the Game as soon as the main button from the welcome modal is clicked
   */
-
-
   function startGame(){
-    //shuffleCard()
+    shuffleCard()
     countdown()
  }
 
@@ -150,7 +141,6 @@ let timer = document.getElementById('timer')
  }
 
  
- 
  /**
   * Increment score by 10 every time the user match a card
   */
@@ -160,7 +150,7 @@ let timer = document.getElementById('timer')
  }
 
 /**
-  * resetScore score to 0 every time the user start again
+  * Reset score to 0 every time the user start again
   */
  function resetScore(){
   points = 0
@@ -200,7 +190,7 @@ let timer = document.getElementById('timer')
     }, 1000)
   }
 
-//Call the game over modal  and execute restartTimer function
+//Call the game over modal  and execute restartGame function
 let restart = document.getElementById("restart")
 restart.addEventListener('click', restartGame)
 
