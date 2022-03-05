@@ -45,7 +45,7 @@ let interval = null
   */
   function startGame(){
     //shuffleCard()
-    countdown()
+    countDown()
  }
 
  /**
@@ -182,7 +182,7 @@ let interval = null
  /**
   * Count dowm timer
   */
-  function countdown(){
+  function countDown(){
     interval = setInterval(function(){
       if(timeLeft === 0){
         timer.innerHTML = '0 :' + ' ' +  0
@@ -204,7 +204,7 @@ restart.addEventListener('click', restartGame)
  */
 function restartGame(){
    timeLeft = 30
-   countdown()
+   countDown()
    resetScore()
    shuffleCard()
    //location.reload()
