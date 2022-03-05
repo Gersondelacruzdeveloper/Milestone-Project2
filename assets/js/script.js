@@ -166,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
  let points = parseInt(document.getElementById('points').innerText)
    if(points !== 40){
      OpenModal("#GameOverModal")
+     lockScreenOpenModal('#GameOverModal', 'restart')
      closeAllcards()
  }
  }
