@@ -186,7 +186,7 @@ let interval = null
     interval = setInterval(function(){
       if(timeLeft === 0){
         timer.innerHTML = '0 :' + ' ' +  0
-        stopcountdown()
+        stopCountDown()
         GameOver()
       }else{
         timer.innerHTML = '0 :' + ' ' +  timeLeft
@@ -257,7 +257,7 @@ function level2Game(){
     setTimeout(function(){
       OpenModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
-      stopcountdown()
+      stopCountDown()
   }, 1000)
   }
 }
@@ -266,7 +266,7 @@ function level2Game(){
 /**
  * stop the timer
  */
-function stopcountdown(){
+function stopCountDown(){
   clearInterval(interval)
 }
 
