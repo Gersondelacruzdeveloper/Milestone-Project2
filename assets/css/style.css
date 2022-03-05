@@ -60,7 +60,6 @@ a {
     transform: translateY(-6px);
     z-index: -1;
     width:250px;
-    background-color:transparent;
 }
 #start-btn img:active {
     transform: translateY(-2px);
@@ -219,7 +218,7 @@ footer{
 
 #social-media-links a{
     font-size: 40px;
-    color:black;
+    color:var(--black);
     margin:10px;
 }
 
@@ -310,7 +309,6 @@ footer{
 
     #start-btn img{
         width:150px;
-        background-color:transparent;
     }
 
     /* Animation media queries */
