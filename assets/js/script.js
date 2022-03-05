@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   timer.innerHTML = '0 :' + ' ' +  0
   createCard(CardList, Cardcount)
   OpenModal("#welcome-modal")
+  lockScreenOpenModal('#welcome-modal', 'welcome-modal-btn')
 })
 
 /**
@@ -215,4 +216,30 @@ function closeAllcards(){
     flipCardInner[i].addEventListener('click', rotateCard)
 
  }
+}
+
+/**
+ * Do not allow the user to to skip the modal
+ * User have to click the modal in order to play the game,
+ * also it allow to go to any links they want in the footer
+ * @param {str} modalId - the id that open the modal
+ * @param {str} modalBtnId - the id of the modal button / allow access to play
+ */
+function lockScreenOpenModal(modalId, modalBtnId){
+  let lockscreen = true
+  let modalBtn = document.getElementById(modalBtnId)
+  let footer = document.getElementById('footer')
+   document.body.addEventListener('click', function(event){
+     let iSmodalBtnClick = modalBtn.contains(event.target);
+     let isFooterClick = footer.contains(event.target)
+     if(!iSmodalBtnClick && lockscreen === true){
+       OpenModal(modalId)
+       closeAllcards()
+       resetScore()
+     }else if(iSmodalBtnClick || isFooterClick){
+       document.body.removeEventListener('click', this)
+       lockscreen = false
+     }
+   });
+
 }
