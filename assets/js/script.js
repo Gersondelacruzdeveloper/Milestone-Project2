@@ -140,11 +140,9 @@ let timer = document.getElementById('timer')
  }
  
  
- 
  /**
   *  Shuffle the cards
   */
-
   const shuffleCard = () => {
    for (let i = cardContainer.children.length; i >= 0; i--) {
        cardContainer.appendChild(cardContainer.children[Math.random() * i | 0]);
@@ -171,7 +169,7 @@ let timer = document.getElementById('timer')
  }
  
  /**
-  * Run modal when the user have lost
+  * Run modal when the user have lost and turn all cards back
   */
  function GameOver(){
  let points = parseInt(document.getElementById('points').innerText)
