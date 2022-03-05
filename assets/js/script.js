@@ -186,7 +186,7 @@ let interval = null
     interval = setInterval(function(){
       if(timeLeft === 0){
         timer.innerHTML = '0 :' + ' ' +  0
-        clearInterval(interval)
+        stopcountdown()
         GameOver()
       }else{
         timer.innerHTML = '0 :' + ' ' +  timeLeft
@@ -262,9 +262,20 @@ function level2Game(){
   }
 }
 
+
 /**
  * stop the timer
  */
 function stopcountdown(){
   clearInterval(interval)
 }
+
+/**
+ * Reset the the timer
+ */
+function resetCountDown(){
+  stopcountdown()
+  document.getElementById('timer').innerText = 0
+  countdown()
+}
+
