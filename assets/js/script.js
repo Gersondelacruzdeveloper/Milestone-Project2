@@ -235,7 +235,7 @@ function lockScreenOpenModal(modalId, modalBtnId){
      let iSmodalBtnClick = modalBtn.contains(event.target);
      let isFooterClick = footer.contains(event.target)
      if(!iSmodalBtnClick && lockscreen === true){
-       OpenModal(modalId)
+       openModal(modalId)
        closeAllcards()
        resetScore()
      }else if(iSmodalBtnClick || isFooterClick){
@@ -295,8 +295,9 @@ function cardsQuantity(){
 /**
  * Advence  to level 2
  */
-
 function level2Game(){
+  points = 40
+  document.getElementById('points').innerText = points
   resetCountDown()
   //shuffleCard()
   cardsQuantity()
