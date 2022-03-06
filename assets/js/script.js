@@ -271,6 +271,7 @@ function stopCountDown(){
  * Reset the the timer
  */
 function resetCountDown(){
+  timeLeft = 30
   stopCountDown()
   timer.innerHTML = '0 :' + ' ' +  0
   countDown()
@@ -298,6 +299,8 @@ function cardsQuantity(){
 function level2Game(){
   resetCountDown()
   //shuffleCard()
-  closeAllcards()
+  cardsQuantity()
+  cardContainer.innerHTML = ''
+  createCard(CardList, Cardcount)
   console.log('level 2 points', points)
 }
