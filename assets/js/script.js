@@ -1,10 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   let timer = document.getElementById('timer')
-  timer.innerHTML = '0 :' + ' ' +  0
-  createCard(CardList, Cardcount)
+  timer.innerHTML = '0 :' + ' ' +  0;
   OpenModal("#welcome-modal")
   lockScreenOpenModal('#welcome-modal', 'welcome-modal-btn')
+  createCard(CardList, Cardcount)
 })
 
 /**
@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
  let isTurnOver  = false;
  let lockCard = false
  let firstCard, SecondCard;
- let points = 10;
  //variable for the timer
  let timeLeft = 30
+ let interval = null
  let timer = document.getElementById('timer')
  //Set amount of cards to be displyed 
- let Cardcount = 8
+ let Cardcount;
+ let points = 0;
+ CardsQuantity()
 
-let interval = null
- 
  // Card list Information, include name and images
  const CardList = [
    {name:"bellatrix", image:"bellatrix.png"},
@@ -39,7 +39,6 @@ let interval = null
    {name:"snape", image:"snape.png"},
    {name:"voldermore", image:"voldermore.png"},
  ];
- 
  /**
   * Start the Game as soon as the main button from the welcome modal is clicked
   */
@@ -133,7 +132,7 @@ let interval = null
  }, 1000)
  }
  
- 
+
  /**
   *  Shuffle the cards
   */
@@ -148,8 +147,8 @@ let interval = null
   * Increment score by 10 every time the user match a card
   */
  function incrementScore(){
-   document.getElementById('points').innerText = points;
    points = points + 10;
+   document.getElementById('points').innerText = points;
    congratLevel()
  }
 
@@ -157,16 +156,15 @@ let interval = null
   * Reset score to 0 every time the user start again
   */
  function resetScore(){
-  points = 0
+  points = 0;
   document.getElementById('points').innerText = points;
-  points = points + 10;
  }
  
  /**
   * Run modal when the user have lost and turn all cards back
   */
  function GameOver(){
- let points = parseInt(document.getElementById('points').innerText)
+   points = parseInt(document.getElementById('points').innerText)
    if(points !== 40){
      OpenModal("#GameOverModal")
      lockScreenOpenModal('#GameOverModal', 'restart')
@@ -206,7 +204,7 @@ function restartGame(){
    timeLeft = 30
    countDown()
    resetScore()
-   shuffleCard()
+   //shuffleCard()
    //location.reload()
 }
 
@@ -253,7 +251,7 @@ function lockScreenOpenModal(modalId, modalBtnId){
  * Stop the the timer
  */
 function congratLevel(){
-  if(points === 50){
+  if(points === 40){
     setTimeout(function(){
       OpenModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
@@ -273,7 +271,33 @@ function stopCountDown(){
  * Reset the the timer
  */
 function resetCountDown(){
-  stopcountdown()
-  document.getElementById('timer').innerText = 0
-  countdown()
+  stopCountDown()
+  timer.innerHTML = '0 :' + ' ' +  0
+  countDown()
+}
+
+/**
+ * check what level user is and select the right amount of cards 
+ * for each level
+ */
+function CardsQuantity(){
+  if(points === 0){
+    Cardcount = 8
+  }else if(points === 40){
+    Cardcount = 4
+  }else if(points === 120){
+    Cardcount = 0
+  }
+  return Cardcount
+}
+
+/**
+ * Advence  to level 2
+ */
+
+function level2Game(){
+  resetCountDown()
+ //shuffleCard()
+  closeAllcards()
+  console.log('level 2 points', points)
 }
