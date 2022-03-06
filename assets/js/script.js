@@ -68,6 +68,7 @@ if(mute == false){
   }
 }
 
+
  /**
  * Play the saunds when the game is over
  */
@@ -86,6 +87,12 @@ if(mute == false){
     }
 }
 
+/**
+ * Mute all sounds 
+ */
+function muted(){
+  mute = true;
+}
 
  // Card list Information, include name and images
  const CardList = [
@@ -308,6 +315,7 @@ function lockScreenOpenModal(modalId, modalBtnId){
        openModal(modalId)
        closeAllcards()
        resetScore()
+       muted()
      }else if(iSmodalBtnClick || isFooterClick){
        document.body.removeEventListener('click', this)
        lockscreen = false
