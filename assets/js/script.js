@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   let timer = document.getElementById('timer')
   timer.innerHTML = '0 :' + ' ' +  0;
@@ -169,6 +168,9 @@ document.addEventListener("DOMContentLoaded", function() {
      openModal("#GameOverModal")
      lockScreenOpenModal('#GameOverModal', 'restart')
      closeAllcards()
+     cardsQuantity()
+     cardContainer.innerHTML = ''
+     createCard(CardList, Cardcount)
  }
  }
  
@@ -193,9 +195,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000)
   }
 
-//Call the game over modal  and execute restartGame function
-let restart = document.getElementById("restart")
-restart.addEventListener('click', restartGame)
 
 /**
  * Restart Game
@@ -205,10 +204,12 @@ function restartGame(){
    timeLeft = 30
    countDown()
    resetScore()
+   cardsQuantity()
+   cardContainer.innerHTML = ''
+   createCard(CardList, Cardcount)
    //shuffleCard()
    //location.reload()
 }
-
 
 /**
  * flips back all cards with the class of turn-over
