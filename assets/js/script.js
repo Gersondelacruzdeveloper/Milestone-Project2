@@ -94,6 +94,13 @@ function muted(){
   mute = true;
 }
 
+/**
+ * Unmute all sounds
+ */
+function unmuted(){
+  mute = false;
+}
+
  // Card list Information, include name and images
  const CardList = [
    {name:"bellatrix", image:"bellatrix.png"},
