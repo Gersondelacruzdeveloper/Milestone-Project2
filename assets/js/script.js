@@ -312,3 +312,14 @@ function level2Game(){
   createCard(CardList, Cardcount)
   console.log('level 2 points', points)
 }
+
+function level3Game(){
+  points = 120
+  document.getElementById('points').innerText = points
+  resetCountDown()
+  //shuffleCard()
+  cardsQuantity()
+  cardContainer.innerHTML = ''
+  createCard(CardList, Cardcount)
+  console.log('level 3 points', points)
+}
