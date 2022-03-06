@@ -108,8 +108,6 @@ function showInstructions(){
   openModal("#instruction-modal")
 }
 
-
-
  // Card list Information, include name and images
  const CardList = [
    {name:"bellatrix", image:"bellatrix.png"},
