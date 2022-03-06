@@ -30,6 +30,7 @@ const unFlipAudio = new Audio('./assets/audio/unflip.mp3');
 const cardsMatchAudio = new Audio("./assets/audio/cards-match.mp3");
 const levelCompleteAudio= new Audio("./assets/audio/level-complete.mp3");
 const gameOverAudio = new Audio("./assets/audio/game-over.mp3");
+const congratsAudio = new Audio("./assets/audio/winner.mp3");
 
 /**
  * Play the saunds when the cards are flips
@@ -75,7 +76,16 @@ if(mute == false){
       gameOverAudio.play();
     }
 }
-  
+
+ /**
+ * Play the saunds when the game is finished and the user has won 
+ */
+  function congratsSound(){
+    if(mute == false){
+      congratsAudio.play();
+    }
+}
+
 
  // Card list Information, include name and images
  const CardList = [
@@ -327,6 +337,7 @@ function congratLevel(){
   }, 1000)
   }else if(points === 240){
     setTimeout(function(){
+      congratsSound()
       openModal("#congrat-modal")
       lockScreenOpenModal('#congrat-modal', 'congrat-modal-btn')
       stopCountDown()
