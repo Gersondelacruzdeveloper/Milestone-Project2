@@ -28,6 +28,7 @@ let mute = false
 const flipAudio =  new Audio('./assets/audio/card-flip.mp3')
 const unFlipAudio = new Audio('./assets/audio/unflip.mp3');
 const cardsMatchAudio = new Audio("./assets/audio/cards-match.mp3");
+const levelCompleteAudio= new Audio("./assets/audio/level-complete.mp3");
 
 /**
  * Play the saunds when the cards are flips
@@ -56,6 +57,14 @@ if(mute == false){
   }
 }
 
+/**
+ * Play the saunds when level one and 2 have been completed
+ */
+ function levelCompleteSound(){
+  if(mute == false){
+    levelCompleteAudio.play();
+  }
+}
 
 
 
@@ -294,12 +303,14 @@ function lockScreenOpenModal(modalId, modalBtnId){
 function congratLevel(){
   if(points === 40){
     setTimeout(function(){
+      levelCompleteSound()
       openModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
       stopCountDown()
   }, 1000)
   }else if(points === 120){
     setTimeout(function(){
+      levelCompleteSound()
       openModal("#level3-modal")
       lockScreenOpenModal('#level3-modal', 'level3-modal-btn')
       stopCountDown()
