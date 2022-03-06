@@ -201,6 +201,7 @@ restart.addEventListener('click', restartGame)
  * Restart Game
  */
 function restartGame(){
+   points = 0
    timeLeft = 30
    countDown()
    resetScore()
@@ -255,6 +256,12 @@ function congratLevel(){
     setTimeout(function(){
       openModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
+      stopCountDown()
+  }, 1000)
+  }else if(points === 120){
+    setTimeout(function(){
+      openModal("#level3-modal")
+      lockScreenOpenModal('#level3-modal', 'level3-modal-btn')
       stopCountDown()
   }, 1000)
   }
