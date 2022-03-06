@@ -264,6 +264,12 @@ function congratLevel(){
       lockScreenOpenModal('#level3-modal', 'level3-modal-btn')
       stopCountDown()
   }, 1000)
+  }else if(points === 240){
+    setTimeout(function(){
+      openModal("#congrat-modal")
+      lockScreenOpenModal('#congrat-modal', 'congrat-modal-btn')
+      stopCountDown()
+  }, 1000)
   }
 }
 
