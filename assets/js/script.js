@@ -29,6 +29,7 @@ const flipAudio =  new Audio('./assets/audio/card-flip.mp3')
 const unFlipAudio = new Audio('./assets/audio/unflip.mp3');
 const cardsMatchAudio = new Audio("./assets/audio/cards-match.mp3");
 const levelCompleteAudio= new Audio("./assets/audio/level-complete.mp3");
+const gameOverAudio = new Audio("./assets/audio/game-over.mp3");
 
 /**
  * Play the saunds when the cards are flips
@@ -66,7 +67,15 @@ if(mute == false){
   }
 }
 
-
+ /**
+ * Play the saunds when the game is over
+ */
+  function gameOverSound(){
+    if(mute == false){
+      gameOverAudio.play();
+    }
+}
+  
 
  // Card list Information, include name and images
  const CardList = [
@@ -213,6 +222,7 @@ if(mute == false){
  function gameOver(){
    points = parseInt(document.getElementById('points').innerText)
    if(points !== 40){
+     gameOverSound()
      openModal("#GameOverModal")
      lockScreenOpenModal('#GameOverModal', 'restart')
      closeAllcards()
