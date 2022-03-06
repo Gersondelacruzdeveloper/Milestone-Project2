@@ -101,6 +101,15 @@ function unmuted(){
   mute = false;
 }
 
+/**
+ * Show instrunction modal when the instruction icon is clicked
+ */
+function showInstructions(){
+  openModal("#instruction-modal")
+}
+
+
+
  // Card list Information, include name and images
  const CardList = [
    {name:"bellatrix", image:"bellatrix.png"},
@@ -294,7 +303,7 @@ function restartGame(){
 }
 
 /**
- * flips back all cards with the class of turn-over
+ * Flips back all cards with the class of turn-over
  */
 function closeAllcards(){
   for(let i=0; i<flipCardInner.length; i++){
@@ -378,7 +387,7 @@ function resetCountDown(){
 }
 
 /**
- * check what level user is and select the right amount of cards 
+ * Check what level user is and select the right amount of cards 
  * for each level
  */
 function cardsQuantity(){
