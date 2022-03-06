@@ -23,6 +23,22 @@ document.addEventListener("DOMContentLoaded", function() {
  let points = 0;
  cardsQuantity()
 
+//Audios variables
+let mute = false
+let flipAudio =  new Audio('./assets/audio/card-flip.mp3')
+
+
+/**
+ * Play the saunds when the cards are flips
+ */
+function flipSound(){
+if(mute == false){
+  flipAudio.play();
+}
+}
+
+
+
  // Card list Information, include name and images
  const CardList = [
    {name:"bellatrix", image:"bellatrix.png"},
@@ -84,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
    if(lockCard) return;
    if(this === firstCard) return;
    this.classList.add('turn-over')
+   flipSound()
    if(!isTurnOver){
        isTurnOver= true;
        firstCard = this
