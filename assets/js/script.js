@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Audios variables
 let mute = false
-let flipAudio =  new Audio('./assets/audio/card-flip.mp3')
+const flipAudio =  new Audio('./assets/audio/card-flip.mp3')
+const unFlipAudio = new Audio('./assets/audio/unflip.mp3');
 
 
 /**
@@ -36,6 +37,17 @@ if(mute == false){
   flipAudio.play();
 }
 }
+
+/**
+ * Play the saunds when the cards are flip back
+ */
+ function unFlipSound(){
+  if(mute == false){
+    unFlipAudio.play();
+  }
+}
+
+
 
 
 
@@ -145,6 +157,7 @@ if(mute == false){
      firstCard.classList.remove('turn-over')
      secondCard.classList.remove('turn-over')
      lockCard = false
+     unFlipSound()
  }, 1000)
  }
  
