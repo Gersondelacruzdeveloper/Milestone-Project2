@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let mute = false
 const flipAudio =  new Audio('./assets/audio/card-flip.mp3')
 const unFlipAudio = new Audio('./assets/audio/unflip.mp3');
-
+const cardsMatchAudio = new Audio("./assets/audio/cards-match.mp3");
 
 /**
  * Play the saunds when the cards are flips
@@ -47,6 +47,14 @@ if(mute == false){
   }
 }
 
+/**
+ * Play the saunds when the cards are matched
+ */
+ function cardsMatchSound(){
+  if(mute == false){
+    cardsMatchAudio.play();
+  }
+}
 
 
 
@@ -129,6 +137,7 @@ if(mute == false){
    if(firstCard.getAttribute("data-name") === 
    secondCard.getAttribute("data-name")){
      removeListener()
+     cardsMatchSound()
      incrementScore()
    }else{
      //wait 10 seconds and then remove the turn over class
