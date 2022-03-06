@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   let timer = document.getElementById('timer')
   timer.innerHTML = '0 :' + ' ' +  0;
-  OpenModal("#welcome-modal")
+  openModal("#welcome-modal")
   lockScreenOpenModal('#welcome-modal', 'welcome-modal-btn')
   createCard(CardList, Cardcount)
 })
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
  //Set amount of cards to be displyed 
  let Cardcount;
  let points = 0;
- CardsQuantity()
+ cardsQuantity()
 
  // Card list Information, include name and images
  const CardList = [
@@ -163,17 +163,17 @@ document.addEventListener("DOMContentLoaded", function() {
  /**
   * Run modal when the user have lost and turn all cards back
   */
- function GameOver(){
+ function gameOver(){
    points = parseInt(document.getElementById('points').innerText)
    if(points !== 40){
-     OpenModal("#GameOverModal")
+     openModal("#GameOverModal")
      lockScreenOpenModal('#GameOverModal', 'restart')
      closeAllcards()
  }
  }
  
  // Open modal
- function OpenModal(modalId) {
+ function openModal(modalId) {
    $(modalId).modal('show');
  }
 
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if(timeLeft === 0){
         timer.innerHTML = '0 :' + ' ' +  0
         stopCountDown()
-        GameOver()
+        gameOver()
       }else{
         timer.innerHTML = '0 :' + ' ' +  timeLeft
         timeLeft --;
@@ -253,7 +253,7 @@ function lockScreenOpenModal(modalId, modalBtnId){
 function congratLevel(){
   if(points === 40){
     setTimeout(function(){
-      OpenModal("#level2-modal")
+      openModal("#level2-modal")
       lockScreenOpenModal('#level2-modal', 'level2-modal-btn')
       stopCountDown()
   }, 1000)
@@ -280,7 +280,7 @@ function resetCountDown(){
  * check what level user is and select the right amount of cards 
  * for each level
  */
-function CardsQuantity(){
+function cardsQuantity(){
   if(points === 0){
     Cardcount = 8
   }else if(points === 40){
@@ -297,7 +297,7 @@ function CardsQuantity(){
 
 function level2Game(){
   resetCountDown()
- //shuffleCard()
+  //shuffleCard()
   closeAllcards()
   console.log('level 2 points', points)
 }
