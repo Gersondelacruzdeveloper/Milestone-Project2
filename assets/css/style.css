@@ -136,7 +136,6 @@ top:68px;
 display:grid;
 grid-template-columns:auto auto auto auto;
 justify-content: center;
-
 }
 /* Code taken from https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 .flip-card {
@@ -201,8 +200,7 @@ justify-content: center;
 
 /* -------------------------------------------------------- footer section */
 footer{
-    position: fixed;
-    bottom: 15px;
+    margin-top: 120px;
     width:100%;
     display: grid;
     grid-template-columns: auto;
