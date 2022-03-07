@@ -127,8 +127,9 @@ function showInstructions(){
   * Start the Game as soon as the main button from the welcome modal is clicked
   */
   function startGame(){
-    //shuffleCard()
+    shuffleCard()
     countDown()
+    unmuted()
  }
 
  /**
@@ -291,12 +292,13 @@ function showInstructions(){
 function restartGame(){
    points = 0
    timeLeft = 30
+   unmuted()
    countDown()
    resetScore()
    cardsQuantity()
    cardContainer.innerHTML = ''
    createCard(CardList, Cardcount)
-   //shuffleCard()
+   shuffleCard()
    //location.reload()
 }
 
@@ -306,8 +308,6 @@ function restartGame(){
 function closeAllcards(){
   for(let i=0; i<flipCardInner.length; i++){
     flipCardInner[i].classList.remove('turn-over')
-    flipCardInner[i].addEventListener('click', rotateCard)
-
  }
 }
 
@@ -406,7 +406,8 @@ function level2Game(){
   points = 40
   document.getElementById('points').innerText = points
   resetCountDown()
-  //shuffleCard()
+  unmuted()
+  shuffleCard()
   cardsQuantity()
   cardContainer.innerHTML = ''
   createCard(CardList, Cardcount)
@@ -417,7 +418,8 @@ function level3Game(){
   points = 120
   document.getElementById('points').innerText = points
   resetCountDown()
-  //shuffleCard()
+  unmuted()
+  shuffleCard()
   cardsQuantity()
   cardContainer.innerHTML = ''
   createCard(CardList, Cardcount)
