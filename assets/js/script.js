@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     openModal("#welcome-modal")
     lockScreenOpenModal('#welcome-modal', 'welcome-modal-btn')
     createCard(CardList, Cardcount)
-  })
+})
   
   /**
    * Game variables
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     * Start the Game as soon as the main button from the welcome modal is clicked
     */
     function startGame(){
-      //shuffleCard()
+      shuffleCard()
       countDown()
       unmuted()
    }
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
     */
    function gameOver(){
      points = parseInt(document.getElementById('points').innerText)
-     if(points !== 40){
+     if(points != 40 || points != 120 || points != 240){
        gameOverSound()
        openModal("#GameOverModal")
        lockScreenOpenModal('#GameOverModal', 'restart')
@@ -407,10 +407,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('points').innerText = points
     resetCountDown()
     unmuted()
-    shuffleCard()
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
+    shuffleCard()
     console.log('level 2 points', points)
   }
 
@@ -422,13 +422,12 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('points').innerText = points
     resetCountDown()
     unmuted()
-    shuffleCard()
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
+    shuffleCard()
     console.log('level 3 points', points)
   }
-
 
 
 /**
