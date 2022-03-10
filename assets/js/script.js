@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let lockCard = false
    let firstCard, SecondCard;
    //variable for the timer
-   let timeLeft = 10;
+   let timeLeft = 20;
    let interval = null
    let timer = document.getElementById('timer')
    //Set amount of cards to be displyed 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     * Start the Game as soon as the main button from the welcome modal is clicked
     */
     function startGame(){
-      //shuffleCard()
+      shuffleCard()
       countDown()
       unmuted()
    }
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
    */
   function restartGame(){
      points = 0
-     timeLeft = 30
+     timeLeft = 20
      unmuted()
      countDown()
      resetScore()
@@ -302,8 +302,7 @@ document.addEventListener("DOMContentLoaded", function() {
      createCard(CardList, Cardcount)
      positionPoints()
      positPointsPhones()
-     //shuffleCard()
-     //location.reload()
+     shuffleCard()
   }
   
   /**
@@ -414,8 +413,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
-    //shuffleCard()
-    console.log('level 2 points', points)
+    shuffleCard()
   }
 
    /**
@@ -429,8 +427,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
-    //shuffleCard()
-    console.log('level 3 points', points)
+    shuffleCard()
   }
 
 
@@ -439,11 +436,11 @@ document.addEventListener("DOMContentLoaded", function() {
  */
   function setTimeleft(){
     if(points === 0){
-      timeLeft = 30;
+      timeLeft = 20;
     }else if(points === 40){
-      timeLeft = 40;
-    }else if(points === 120){
       timeLeft = 50;
+    }else if(points === 120){
+      timeLeft = 60;
     }
     return timeLeft;
 }
@@ -481,4 +478,3 @@ function positPointsPhones(){
     }
   }
 }
-
