@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let lockCard = false
    let firstCard, SecondCard;
    //variable for the timer
-   let timeLeft = 30;
+   let timeLeft = 10;
    let interval = null
    let timer = document.getElementById('timer')
    //Set amount of cards to be displyed 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     * Start the Game as soon as the main button from the welcome modal is clicked
     */
     function startGame(){
-      shuffleCard()
+      //shuffleCard()
       countDown()
       unmuted()
    }
@@ -238,6 +238,8 @@ document.addEventListener("DOMContentLoaded", function() {
      points = points + 10;
      document.getElementById('points').innerText = points;
      congratLevel()
+     positionPoints()
+     positPointsPhones()
    }
   
   /**
@@ -298,7 +300,9 @@ document.addEventListener("DOMContentLoaded", function() {
      cardsQuantity()
      cardContainer.innerHTML = ''
      createCard(CardList, Cardcount)
-     shuffleCard()
+     positionPoints()
+     positPointsPhones()
+     //shuffleCard()
      //location.reload()
   }
   
@@ -410,7 +414,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
-    shuffleCard()
+    //shuffleCard()
     console.log('level 2 points', points)
   }
 
@@ -425,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
-    shuffleCard()
+    //shuffleCard()
     console.log('level 3 points', points)
   }
 
@@ -443,3 +447,38 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     return timeLeft;
 }
+
+
+/**
+ * Centralize the position points on the image in tablet, compueter etc
+ */
+
+function positionPoints(){
+  if(window.innerWidth > '768'){
+    if(points > 0 && points < 100){
+      document.getElementById('points').style.right = "65px";
+    }else if(points >= 100){
+      document.getElementById('points').style.right = "50px";
+    }else{
+      document.getElementById('points').style.right = "70px"
+    }
+  }
+}
+
+
+/**
+ * Trantralize the position points when the window width is 768px down
+ */
+function positPointsPhones(){
+  if(window.innerWidth <= '768'){
+    if(points > 0 && points < 100){
+      document.getElementById('points').style.right = "43px";
+      console.log(points)
+    }else if(points >= 100){
+      document.getElementById('points').style.right = "35px";
+    }else{
+      document.getElementById('points').style.right = "50px"
+    }
+  }
+}
+
