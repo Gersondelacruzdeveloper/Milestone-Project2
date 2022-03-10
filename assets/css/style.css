@@ -27,7 +27,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
 }
 
 a {
@@ -90,14 +89,14 @@ a {
 
 #timer-img{
    width:200px;
-   position: absolute;
+   position: fixed;
    top:0;
    left:0;
    padding: 20px;
 }
 
 #timer{
-    position: absolute;
+    position: fixed;
     font-weight: bolder;
     font-size: 30px;
     left:70px;
@@ -107,14 +106,14 @@ a {
 
 #points-img{
     width:250px;
-    position:absolute ;
+    position:fixed ;
     right:0;
     top:0;
     padding: 20px;
 }
 
 #points{
-position: absolute;
+position: fixed;
 font-weight: bolder;
 font-size: 30px;
 right:70px;
