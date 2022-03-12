@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let lockCard = false
    let firstCard, SecondCard;
    //variable for the timer
-   let timeLeft = 20;
+   let timeLeft = 30;
    let interval = null
    let timer = document.getElementById('timer')
    //Set amount of cards to be displyed 
@@ -302,6 +302,7 @@ document.addEventListener("DOMContentLoaded", function() {
      createCard(CardList, Cardcount)
      positionPoints()
      positPointsPhones()
+     makeFooterFixed()
      shuffleCard()
   }
   
@@ -413,6 +414,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
+    makeFooterStatic()
     shuffleCard()
   }
 
@@ -428,6 +430,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
     shuffleCard()
+    makeFooterStatic()
   }
 
 
@@ -476,5 +479,24 @@ function positPointsPhones(){
     }else{
       document.getElementById('points').style.right = "50px"
     }
+  }
+}
+
+/**
+ * Make footer static
+ */
+function makeFooterStatic(){
+  if(points === 40){
+    document.getElementsByTagName('footer')[0].style.position = 'static'
+  
+  }
+}
+
+/**
+ * Make footer fixed
+ */
+function makeFooterFixed(){
+  if(points === 0){
+    document.getElementsByTagName('footer')[0].style.position = 'fixed'
   }
 }
