@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
    */
   function restartGame(){
      points = 0
-     timeLeft = 20
+     timeLeft = 30
      unmuted()
      countDown()
      resetScore()
@@ -439,7 +439,7 @@ document.addEventListener("DOMContentLoaded", function() {
  */
   function setTimeleft(){
     if(points === 0){
-      timeLeft = 20;
+      timeLeft = 30;
     }else if(points === 40){
       timeLeft = 50;
     }else if(points === 120){
