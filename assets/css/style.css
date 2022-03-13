@@ -177,7 +177,10 @@ justify-content: center;
 .turn-over{
     transform: rotateY(180deg);
 }
-
+#toggleBtn{
+    background: none;
+    border-color: transparent;
+}
 
 /* -------------------------------------------------------------------- Modals */
 #title-modal{
