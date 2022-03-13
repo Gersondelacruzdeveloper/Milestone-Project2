@@ -100,13 +100,33 @@ document.addEventListener("DOMContentLoaded", function() {
   function unmuted(){
     mute = false;
   }
-  
+
+  //Add event listener to the id
+  let toggleBtn = document.getElementById('toggleBtn')
+  toggleBtn.addEventListener('click', toggleMainSounds)
+
+/**
+ * Toggle the sound icon
+ */
+
+  function toggleMainSounds(){
+    if(mute === false){
+     toggleBtn.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`
+       muted()
+    }else if(mute === true){
+      toggleBtn.innerHTML = `<i class="fa-solid fa-volume-high"></i>`
+       unmuted()
+    }
+  }
+
   /**
    * Show instrunction modal when the instruction icon is clicked
    */
   function showInstructions(){
     openModal("#instruction-modal")
   }
+
+
   
    // Card list Information, include name and images
    const CardList = [
