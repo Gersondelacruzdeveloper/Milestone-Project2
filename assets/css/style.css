@@ -5,7 +5,6 @@
     --sun:#fabc11;
     --black:black;
     --sapling:#ddc9a2;
-    --harry-font:'Harry Potter', sans-serif; 
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -32,7 +31,9 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
+
 
 
 /* -------------------------------------------------------- Index.html page*/
@@ -298,6 +299,15 @@ footer{
     
 }
 
+.home-sounds-container{
+    font-size: 40px;
+    text-align: center;
+}
+
+#footer a:hover,i:hover,span:hover{
+    color:#fa5b11;
+    cursor: pointer;
+}
 
 /* -------------------------------------------------------------------- Media queries */
 
