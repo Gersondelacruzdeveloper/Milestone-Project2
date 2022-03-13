@@ -314,7 +314,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function restartGame(){
      points = 0
      timeLeft = 30
-     unmuted()
      countDown()
      resetScore()
      cardsQuantity()
@@ -430,7 +429,6 @@ document.addEventListener("DOMContentLoaded", function() {
     points = 40
     document.getElementById('points').innerText = points
     resetCountDown()
-    unmuted()
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
@@ -445,7 +443,6 @@ document.addEventListener("DOMContentLoaded", function() {
     points = 120
     document.getElementById('points').innerText = points
     resetCountDown()
-    unmuted()
     cardsQuantity()
     cardContainer.innerHTML = ''
     createCard(CardList, Cardcount)
