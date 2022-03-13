@@ -34,6 +34,9 @@
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ultra" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
      <!-- Harry potter font -->
      <!-- 
     <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
@@ -41,48 +44,65 @@
   </head>
   <body>
 
-     <!--header section-->
-     <header id="header">
-        <img id="timer-img" src="./assets/images/timer.png" alt="image of a flag">
-        <p id="timer"></p>
-
-      <div id="header-instruction-container"> 
-       <p>Flip the cards to find the pairs</p>
-      </div>
-        <img id="points-img" src="./assets/images/points.png" alt="images of a letter and a bird">
-        <p id="points">0</p>
-    </header>
-
     <main>
-     <!--card section-->
-       <section id="section-card">
-         <div id='card-container'>
-        </div>
-       </section>
+      <!--Contact section-->
+      <section>
+        <h2 class="form-heading">Send me a message</h2>
+        <div class="contact-form-container">
+            <form id="contact-form" action="./form-action-page.html">
+               <div class="input-group mb-3">
+              <label for="name">Name: </label>
+              <input required class="input-field" type="text" name="name" id="name">
+              </div>
 
+               <div class="input-group mb-3">
+              <label>Subject: </label>
+              <input required class="input-field" type="text" name="subject">
+               </div>
+
+               <div class="input-group mb-3">
+              <label>Email: </label>
+              <input required class="input-field" type="email" name="email">
+               </div>
+
+               <div class="input-group mb-3 message-container">
+                <label class="message">Message : </label>
+                <input type="text" class="input-field" value=""/><br>
+                <input type="text" class="input-field extra-message-input" value=""/><br>
+                <input type="text" class="input-field extra-message-input" value=""/><br>
+                <input type="text" class="input-field extra-message-input" value=""/><br>
+               </div>
+
+               <div class="message-btn-container">
+                <button id="message-btn" type="submit"><img src="./assets/images/start-button.png" 
+                   alt="Summit Button image"></button> 
+                </div>
+            </form>
+          </div>
+        </section>
     </main>
 
-    <!--Footer section-->
-    <footer id="footer">
+      <!--Footer section-->
+      <footer id="footer">
 
-      <di id="social-media-links"> 
-
-      <a href="https://www.linkedin.com/in/gerson-de-la-cruz-453784213/"  
-      target="_blank" class="fab fa-linkedin"></a>
-
-      <a href="https://github.com/Gersondelacruzdeveloper"
-      target="_blank" class="fab fa-github"></a>
-
-      <a href="./contact.html" class="fas fa-envelope"></a>
-
-      <span onclick="showInstructions()" class="fas fa-question" ></span>
-
-      </di>
-      
-      <div id="copyright-container">
-        <p>	&copy; Created by Gerson De La Cruz</p>
-      </div>
-    </footer>
+        <di id="social-media-links"> 
+  
+        <a href="https://www.linkedin.com/in/gerson-de-la-cruz-453784213/"  
+        target="_blank" class="fab fa-linkedin"></a>
+  
+        <a href="https://github.com/Gersondelacruzdeveloper"
+        target="_blank" class="fab fa-github"></a>
+  
+        <a href="./contact.html" class="fas fa-envelope"></a>
+  
+        <span onclick="showInstructions()" class="fas fa-question" ></span>
+  
+        </di>
+        
+        <div id="copyright-container">
+          <p>	&copy; Created by Gerson De La Cruz</p>
+        </div>
+      </footer>
 
      <!-- Game Over Modal -->
       <div class="modal fade" id="GameOverModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

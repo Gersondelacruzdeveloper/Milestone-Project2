@@ -197,6 +197,76 @@ justify-content: center;
     background-color: var(--sun);
 }
 
+/* -------------------------------------------------------------------- Contact page */
+
+
+.contact-form-container{
+    width:500px;
+    height:500px;
+    margin: 1% auto;
+    border: 10px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+#contact-form{
+    margin:20px;
+}
+
+#contact-form label{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+}
+.form-heading{
+    margin-top: 5%;
+    color:var(--concrete);;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+}
+ .input-field[type=text], .input-field[type=email]{
+    width:78%;
+    padding: 20px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    color: var(--black);
+    background-color: var(--concrete);
+    font-size:30px;
+    height:30px;
+    border: none;
+    border-bottom: 5px dashed black;
+    font-family: 'Dancing Script', cursive;
+}
+
+.extra-message-input[type=text]{
+ width:100%;
+ padding:20px;
+}
+
+.input-field[type=text],
+.input-field[type=email]:focus{
+    outline: none;
+	box-shadow: none;
+    border:none;
+	border-bottom: 5px dashed black;
+}
+
+#message-btn{
+    background: none;
+    border-color: transparent;
+}
+#message-btn img{
+    margin-top: 5%;
+    transform: translateY(-6px);
+    z-index: -1;
+    width:200px;
+}
+
+#message-btn img:active {
+    transform: translateY(-2px);
+  
+}
 
 /* -------------------------------------------------------- footer section */
 footer{
@@ -215,7 +285,7 @@ footer{
     font-weight: bold;
 }
 
-#social-media-links a{
+#social-media-links a, span{
     font-size: 40px;
     color:var(--black);
     margin:10px;
@@ -322,6 +392,27 @@ footer{
         50%{top:0px}
         100% {top:0px; left: 55%;}
     }
+
+/* ----------------------- Contact Page media queries */
+.contact-form-container{
+    width:300px;
+    height:450px;
+}
+.input-field[type=text], .input-field[type=email]{
+    width:100%;
+    padding: 2px 5px;
+    margin: 0 0;
+    font-size:20px;
+    border-bottom: 4px dashed black;
+}
+.form-heading{
+    margin-top: 5%;
+    color:var(--concrete);;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+    font-size:30px;
+}
+
 /* ----------------------- footer media queries*/
     footer{
         grid-template-columns: auto;
