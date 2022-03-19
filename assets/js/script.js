@@ -517,3 +517,5 @@ function makeFooterFixed(){
     document.getElementsByTagName('footer')[0].style.position = 'fixed'
   }
 }
+
+

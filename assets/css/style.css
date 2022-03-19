@@ -282,7 +282,39 @@ justify-content: center;
     width: 100px;
 }
 
+/* -------------------------------------------------------------------- Contact response page */
+#contact-response{
+text-align: center;
+}
 
+.contact-response-heading{
+font-size: 30px;
+}
+
+#contact-response{
+    margin-top:10%;
+}
+
+#contact-response h3{
+    color: var(--concrete);
+    width:80%;
+    margin:20px auto;
+}
+
+#contact-response a{
+    background-color:#fa5b11;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width:170px;
+    margin: 50px auto;
+    color: black;
+}
+
+#contact-response a:hover{
+    background-color:#d66f3f;
+}
 /* -------------------------------------------------------- footer section */
 footer{
     position: fixed;
@@ -448,6 +480,12 @@ footer{
 .feather-container img{
     width: 40px;
 }
+
+/* ----------------------- Contact response Page media queries */
+#contact-response{
+    margin-top:30%;
+}
+
 
 /* ----------------------- footer media queries*/
     footer{
