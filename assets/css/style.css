@@ -203,8 +203,8 @@ justify-content: center;
 
 /* -------------------------------------------------------------------- Contact page */
 
-
 .contact-form-container{
+    position: relative;
     width:500px;
     height:500px;
     margin: 1% auto;
@@ -271,6 +271,18 @@ justify-content: center;
     transform: translateY(-2px);
   
 }
+
+.feather-container{
+    position: absolute;
+    top:70%;
+    left: 65%;
+    width: 100px;
+}
+
+.feather-container img{
+    width: 100%;
+}
+
 
 /* -------------------------------------------------------- footer section */
 footer{
@@ -426,6 +438,12 @@ footer{
     text-align:center;
     font-family: 'Dancing Script', cursive;
     font-size:30px;
+}
+
+.feather-container{
+    position: absolute;
+    top:65%;
+    left: 62%;
 }
 
 /* ----------------------- footer media queries*/
