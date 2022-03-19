@@ -6,7 +6,8 @@
  */
 function sendMail(event){
 event.preventDefault();
-let contactForm = document.getElementById('contact-form')
+showSpiner()
+let contactForm = document.getElementById('contact-form');
 emailjs.send('service_830kjsk', 'template_eot1fjz', 
 {subject: contactForm.subject.value,
 name: contactForm.name.value,
@@ -18,7 +19,15 @@ email:contactForm.email.value,
     location.href= "contact-response.html"
 }, 
 function(error){
-    alert('faled', error)
+    location.href= "contact-error-response.html"
 }
 )
+}
+
+/**
+ * Show the spinner and give opacity to the background
+ */
+function showSpiner(){
+    document.getElementById('loader').style.display ='block'
+    document.body.style.opacity = "0.5";
 }

@@ -324,6 +324,35 @@ font-size: 30px;
     margin-top:10%;
 }
 
+
+/* ----------------------------------------- contact spiners */
+/* code copy from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader2 */
+#loader {
+    position: absolute;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: none;
+    left:46%;
+    top:30%;
+    z-index: 2;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 /* -------------------------------------------------------- footer section */
 footer{
     position: fixed;
@@ -495,8 +524,11 @@ footer{
 #contact-response{
     margin-top:30%;
 }
+/* ----------------------------------------- contact spiners media queries*/
 
-
+#loader{
+    left:31%;
+}
 /* ----------------------- footer media queries*/
     footer{
         grid-template-columns: auto;
@@ -516,6 +548,4 @@ footer{
         grid-column:1/ 3;
         width:100%;
     }
-
-
 }
