@@ -355,6 +355,19 @@ font-size: 30px;
     z-index: 2;
   }
   
+
+ /* --------------------------------------------- 404 error page */
+
+ #error-404-container{
+    width:50%;
+    margin: 10% auto;
+ }
+
+.card img{
+    width: 400px;
+    margin:auto;
+}
+
 /* -------------------------------------------------------- footer section */
 footer{
     position: fixed;
@@ -557,6 +570,21 @@ footer{
 #loader{
     left:31%;
 }
+
+
+/* --------------------------------------------- 404 error page media queries */
+
+#error-404-container{
+    width:90%;
+    margin: 25% auto;
+ }
+
+.card img{
+    width: 50%;
+    margin:auto;
+}
+
+
 /* ----------------------- footer media queries*/
     footer{
         grid-template-columns: auto;
