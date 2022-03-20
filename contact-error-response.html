@@ -97,79 +97,30 @@
         </div>
       </div>
 
-       <!-- welcome Modal and start Game -->
-       <div class="modal fade" id="welcome-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <h5 id="title-modal">Harry Potter Game</h5>
-              <p>Voldemort is in his way to Hogwarts with his Deatheaters.
-                The only way for us to defeat him,
-                is your help
-                </p>
-              <p>Match the cards to help us win the battle! We are counting on you! </p>
-              <button type="button" class="btn" data-bs-dismiss="modal" onclick="startGame()" id="welcome-modal-btn">Play Game</button>
-            </div>
-          </div>
-        </div>
-      </div>
-         <!-- Advance to Level Two Modal -->
-       <div class="modal fade" id="level2-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <h5 id="title-modal">Congratulation!</h5>
-              <p>You have helped us push Voldemort further from Hogwarts but we still need your help to defeat him and his Deatheaters.
+    <!-- Inscruction Modal -->
+    <div class="modal fade" id="instruction-modal" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Harry Potter Memory Game</h5>
+            <h6 class="text-center">Instructions</h6>
+            <p class="bold">How good is your memory?</p>
+            <p>Start the game by clicking a card. The card flips and an image of harry potter character displays. 
+              Click a different card and see if the images match.
+              There are always two identical images somewhere in the game.
+              If the images match, the cards stay flipped.
+              If the images don’t match, both cards are flipped back over and you can select different cards. 
+              You can exit the game at any time by clicking the home icom at the bottom of the screen or you can restart the game.
+              Can you remember where the matching card is?
+              Once you have found all the matching cards you can either continue on to the next level, 
+              play again or you can exit the game. 
+              Currently there are 3 levels with more levels coming soon!
               </p>
-              <p>Keep matching the cards to help us win the battle! We are counting on you!</p>
-              <button type="button" class="btn" data-bs-dismiss="modal" onclick="level2Game()" id="level2-modal-btn">Play Game level 2</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-     <!-- Advance to Level 3 Modal -->
-     <div class="modal fade" id="level3-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h5 id="title-modal">Congratulation again!</h5>
-            <p>More Deatheaters have joined Voldemort to fight against us, but good news is that more Hogwarts students have joined us.
-            </p>
-            <p>You are about to fight the greatest battler ever seen! Be strong we can do this together!</p>
-            <button type="button" class="btn" data-bs-dismiss="modal" onclick="level3Game()" id="level3-modal-btn">Play Game level 3</button>
           </div>
         </div>
       </div>
     </div>
 
-     <!-- Final Congratulation Modal -->
-     <div class="modal fade" id="congrat-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h5 id="title-modal">Congratulation!</h5>
-            <p>We have successfully defeated Voldemort and his Deatheaters, now we have peace in Hogwarts. Thank you for all your hard work.</p>
-            <button type="button" class="btn" data-bs-dismiss="modal" onclick="restartGame()"  id="congrat-modal-btn">Begin Again</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- Inscruction Modal -->
-  <div class="modal fade" id="instruction-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <h5 id="title-modal">Harry Potter Memory Game</h5>
-          <h6 class="text-center">Instructions</h6>
-          <p><bold>How good is your memory?</bold></p>
-          <p>Start the game by clicking a card. The card flips and an image of Harry Potter character displays. Click a different card and see if the images match. There are always two identical images somewhere in the game. If the images match, the cards stay flipped. If the images don’t match, both cards are flipped back over and you can select different cards. You can exit the game at any time by clicking the Exit button on the screen or you can restart the game. Can you remember where the matching card is? Once you have found all the matching cards you can either continue on to the next level, play again or you can exit the game. Currently there are 3 levels with more levels coming soon! Enjoy!
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
    <!-- jQuery -->
    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -177,7 +128,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
    crossorigin="anonymous"></script>
-    <!-- Email Script -->
-    <script src="assets/js/sendEmail.js"></script>
+   <!-- Local Javascript -->
+    <script src="assets/js/openInstructionModal.js"></script>
   </body>
 </html>
