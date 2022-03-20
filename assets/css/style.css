@@ -129,7 +129,7 @@ top:90px;
     font-size: 40px;
     font-weight: bold;
     padding: 20px;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 /*card section*/
@@ -398,8 +398,8 @@ footer{
 
 /* -------------------------------------------------------------------- Media queries */
 
-/* Medium devices (landscape tablets, from 1025px to 768px) */
-@media only screen and (max-width: 919px) {
+/* Medium devices (landscape tablets, from 1075px to 768px) */
+@media only screen and (max-width: 1075px) {
     /* ----------------------- Game Page media queries */
     #header-instruction-container h2{
         font-size: 30px;
