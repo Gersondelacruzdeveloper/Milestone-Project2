@@ -148,8 +148,9 @@ display:grid;
 grid-template-columns:auto auto auto auto;
 justify-content: center;
 }
+
 /* Code taken from https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-.flip-card {
+.flip-card{
   width: 200px;
   height:227px;
   perspective: 1000px;
@@ -424,6 +425,13 @@ footer{
     #game-name-img{
         width:600px;
         margin-top:300px;
+    }
+    .flip-card{
+        width: 170px;
+    }
+
+    #header-instruction-container h2{
+        margin-top: 150px;
     }
 
 }
