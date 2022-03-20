@@ -50,8 +50,8 @@ a {
 /*Home section*/
 #game-name-img{
     display: block;
-    width:50%;
-    margin-top:10%;
+    width:900px;
+    margin-top:200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -69,7 +69,7 @@ a {
 
 .wand-container{
  text-align: center;
- margin-top:-5%;
+ margin-top: 20px;
  margin-left: -35%;
 }
 
@@ -400,13 +400,16 @@ footer{
 /* -------------------------------------------------------------------- Media queries */
 /* Big devices (Monitor,computer, from 1983px to 768px) */
 @media only screen and (max-width: 1983px) {
-    /* ----------------------- Home Page media queries */
+    /* ----------------------- Home Page animation media queries */
   @keyframes flying-harry{
     0% {left:0px; top:0px}
     25% {top:300px;}
     50%{top:0px}
     100% {top:0px; left: 70%;}
 }
+
+
+
 
 }
 
@@ -416,6 +419,11 @@ footer{
     #header-instruction-container h2{
         font-size: 30px;
         margin-top: 10%;
+    }
+
+    #game-name-img{
+        width:600px;
+        margin-top:300px;
     }
 
 }
