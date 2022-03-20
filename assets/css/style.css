@@ -200,7 +200,9 @@ justify-content: center;
 .modal-body button:hover{
     background-color: var(--sun);
 }
-
+.bold{
+    font-weight: bold;
+}
 /* -------------------------------------------------------------------- Contact page */
 
 .contact-form-container{
