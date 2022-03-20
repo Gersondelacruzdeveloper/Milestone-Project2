@@ -398,9 +398,9 @@ footer{
 
 
 /* -------------------------------------------------------------------- Media queries */
-/* Big devices (Monitor,computer, from 1075px to 768px) */
+/* Big devices (Monitor,computer, from 1983px to 768px) */
 @media only screen and (max-width: 1983px) {
-    /* ----------------------- Game Page media queries */
+    /* ----------------------- Home Page media queries */
   @keyframes flying-harry{
     0% {left:0px; top:0px}
     25% {top:300px;}
@@ -412,7 +412,7 @@ footer{
 
 /* Medium devices (landscape tablets, from 1075px to 768px) */
 @media only screen and (max-width: 1075px) {
-    /* ----------------------- Home Page media queries */
+    /* ----------------------- Game Page media queries */
     #header-instruction-container h2{
         font-size: 30px;
         margin-top: 10%;
