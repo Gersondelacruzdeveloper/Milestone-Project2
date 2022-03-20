@@ -339,7 +339,15 @@ The website was regularly tested using the Google Chrome Developer Tools Lightho
 - "Duplicated attribute rel". by mistake I added doble atribute to the link rel then one rel attribute was eliminated.
 
 The site currently has no errors:
-<img src="assets/documentation/testing/html-validator-no-errors-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot showing that the site has no errors." />
+
+### Home page 
+<img src="assets/documentation/testing/home-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for home page showing that the site has no errors." />
+
+### Game page 
+<img src="assets/documentation/testing/game-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for Game page showing that the site has no errors." />
+
+### Contact page 
+<img src="assets/documentation/testing/contact-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for Game page showing that the site has no errors." />
 
 <br>
 
