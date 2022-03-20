@@ -355,13 +355,12 @@ The site currently has no errors:
 
 ### CSS Validation
 
-[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator) was used to validate the style.css file. 
-It highlighted some errors which have since been resolved:
-- a missing curly brace was inserted in the CSS file.
-- a forward-slash character, left over from a deleted comment, was causing a parse error in the CSS file and was removed.
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator) was used to validate the style.css file.
+
+There were no errors to show so I did not have to fix anything:
 
 The style.css file currently has no errors:
-<img src="assets/documentation/testing/css-validator-no-errors-page.png" height="auto" width="100%" alt="W3C CSS Validation screenshot showing that the CSS file has no errors."/>
+<img src="assets/documentation/testing/css-validation-no-error-page.png" height="auto" width="100%" alt="W3C CSS Validation screenshot showing that the CSS file has no errors."/>
 
 <br>
 
