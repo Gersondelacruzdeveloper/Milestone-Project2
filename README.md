@@ -130,35 +130,23 @@ A footer, which contains very important information: copy right, link of printab
 #### Wireframes
 
 ##### Desktop
-- [Home page for Desktop](./assets/documentation/wireframes/Home.png)
+- [Home page for Desktop](./assets/documentation/wireframes/home.png)
 
-- [Skills page for Desktop](./assets/documentation/wireframes/Skills.png)
+- [Game page for Desktop](./assets/documentation/wireframes/game.png)
 
-- [Experience page for Desktop](./assets/documentation/wireframes/Experience.png)
-
-- [Project page for Desktop](./assets/documentation/wireframes/Projects.png)
-
-- [Contact page for Desktop](./assets/documentation/wireframes/Contact.png)
+- [Contact page for Desktop](./assets/documentation/wireframes/contact.png)
 
 ##### Tablet
 - [Home page for Tablet](./assets/documentation/wireframes/home-tablet.png)
 
-- [Skills page for Tablet](./assets/documentation/wireframes/skills-tablet.png)
-
-- [Experience page for Tablet](./assets/documentation/wireframes/experience-tablet.png)
-
-- [Project page for Tablet](./assets/documentation/wireframes/project-tablet.png)
+- [Game page for Tablet](./assets/documentation/wireframes/game-tablet.png)
 
 - [Contact page for Tablet](./assets/documentation/wireframes/contact-tablet.png)
 
 ##### Mobile
 - [Home page for Mobile](./assets/documentation/wireframes/home-mobile.png)
 
-- [Skills page for Mobile](./assets/documentation/wireframes/skills-mobile.png)
-
-- [Experience page for Mobile](./assets/documentation/wireframes/experience-mobile.png)
-
-- [Project page for Mobile](./assets/documentation/wireframes/project-mobile.png)
+- [Game page for Mobile](./assets/documentation/wireframes/game-mobile.png)
 
 - [Contact page for Mobile](./assets/documentation/wireframes/contact-mobile.png)
 
