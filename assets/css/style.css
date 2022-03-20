@@ -183,9 +183,7 @@ justify-content: center;
 }
 
 /* -------------------------------------------------------------------- Modals */
-#title-modal{
-    font-family: var(--harry-font);                                             
-}
+
 .sun-color{
     color: var(--sun);
 }
