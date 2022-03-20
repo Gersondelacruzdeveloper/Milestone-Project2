@@ -125,7 +125,7 @@ top:90px;
 #header-instruction-container{
     text-align: center;
 }
-#header-instruction-container p{
+#header-instruction-container h2{
     font-size: 40px;
     font-weight: bold;
     padding: 20px;
@@ -403,7 +403,7 @@ footer{
 /* Medium devices (landscape tablets, from 1025px to 768px) */
 @media only screen and (max-width: 919px) {
     /* ----------------------- Game Page media queries */
-    #header-instruction-container p{
+    #header-instruction-container h2{
         font-size: 30px;
         margin-top: 10%;
     }
@@ -450,9 +450,9 @@ footer{
          z-index: 2;
      }
 
-     #header-instruction-container p{
-        font-size: 25px;
-        margin-top: 20%;
+     #header-instruction-container h2{
+        font-size: 20px;
+        margin-top: 30%;
     }
 
      /* card section */
