@@ -333,10 +333,11 @@ The website was regularly tested using the Google Chrome Developer Tools Lightho
 
 ### HTML Validation
 
-[W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted some three errors across the site which have since been recitified: 
-- Favicon link has a incorect rel value and the correct value was added
-- "The link role is unnecessary for element a with attribute href". The link role was eliminated
-- "Duplicated attribute rel". by mistake I added doble atribute to the link rel then one rel attribute was eliminated.
+[W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted four errors across the site which have since been recitified: 
+- Misspell div element in home and contact page, the correct element was added.
+- "Element bold not allowed as a child of element p". The element was eliminated and added a class called bold.
+- "The aria-labelledby attribute must point to an element in the same document". I copied the code for the modal from bootstrap and as I was opening the modal with my own javascript, ther were no need for me to used aria-labelledby attribute, so I deleted the aria-labelledby.
+- "Duplicate ID" Deleted the ids and added classes. 
 
 The site currently has no errors:
 
