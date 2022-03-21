@@ -21,7 +21,7 @@ html {
 }
 
 body{
-    background-image: url("../images/background.webp");
+    background-image: url("../images/background.png");
     background-color:var(--gold);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +44,6 @@ a{
     position: absolute;
     animation: flying-harry 10s infinite normal ease;
     width:150px;
-    height:150px;
     z-index: 1;
 }
 
