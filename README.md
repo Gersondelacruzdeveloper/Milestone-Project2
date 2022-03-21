@@ -9,7 +9,7 @@ Hello, this a Harry Potter pairs game and is the second of four Milestone Projec
 
 The project is developed using **HTML**, **CSS** and **JavaScript** with a litle use of bootstrap.
 
-[View website on GitHub Pages](https://gersondelacruzdeveloper.github.io/Milestone-Project1/).
+[View website on GitHub Pages](https://gersondelacruzdeveloper.github.io/Milestone-Project2/).
 
 ## Table of contents
 1. [**User Experience (UX)**](#User-experience)
