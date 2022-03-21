@@ -388,7 +388,7 @@ footer{
     line-height: 50px;
 }
 
-#social-media-links a, span{
+.social-media-links a, span{
     font-size: 40px;
     color:var(--black);
     margin:10px;
@@ -409,7 +409,9 @@ footer{
 #toggleBtn{
     font-size: 40px;  
 }
-
+.social-media-links a[aria-hidden=true] {
+    display:none;
+}
 
 /* -------------------------------------------------------------------- Media queries */
 /* Big devices (Monitor,computer, from 1983px to 768px) */
@@ -595,7 +597,7 @@ footer{
         font-size: 20px;
 
     }
-    #social-media-links a{
+    .social-media-links a{
         font-size: 30px;
     }
 
