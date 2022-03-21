@@ -29,7 +29,7 @@ body {
     background-size: cover;
 }
 
-a {
+a{
     text-decoration: none;
     color: var(--black);
 }
@@ -409,9 +409,6 @@ footer{
 #toggleBtn{
     font-size: 40px;  
 }
-.social-media-links a[aria-hidden=true] {
-    display:none;
-}
 
 /* -------------------------------------------------------------------- Media queries */
 /* Big devices (Monitor,computer, from 1983px to 768px) */
@@ -423,9 +420,6 @@ footer{
     50%{top:0px}
     100% {top:0px; left: 70%;}
 }
-
-
-
 
 }
 
