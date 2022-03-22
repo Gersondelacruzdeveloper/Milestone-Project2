@@ -200,40 +200,65 @@ The project consists of three main pages, and has a 404.html error page, a respo
 
 The portfolio’s favicon, displayed on the web Brower’s tab, allows the user to identify the website by sight.
  
-**Header**
-- ***Porfolio Logo***: Simple logo created using HTML and CSS by my own width a touch of animation which make is unique. This allows the user to instantly recognise the companies brand. 
-- **Navigation Bar**: allows the user to navigate through the site easily. Fully responsive it condenses to a 'hamburger icon' for a more streamlined appearance on tablet and mobile devices.
+**More Features**
 
-**Line data simulator**
-  - The project has a vertical line that simulate data passing constantly, this vertical line is on every page.
+- *** Game Logo ***: The logo of the game is the Harry Potter title. Designed in a Harry Potter font that is recognizable across all franchises.
+
+- **Contact Page**: Allow the user to Contact me for any enquiries through.
 
 **Footer**
 
-Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn link, and WhatsApp link to message directly if desired. furthermore, it has a download link for the CV, and to the right it contains the copyright at my name.
+Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn link, and icon to go to contact page to message directly if desired. Furthermore, it has an Instruction icon when it clicks a modal show up and provide information and rules about the game, and to the right it contains the copyright at my name.
 
 
 #### Index.html (home)features
-  - Small paragraph introducing myself:  this welcomes the potential employers to my portfolio.
-  - My name with a big font-size.
-  - Full-Stack Developer as occupation
-  - A 50% border radius image of myself.
-  - Nice and long paragraph with a bit of more details about me.
-#### Skills.html features
-  - Title and a subtitle
-  - Animated progress bar with icons inside each bar and language or framework.
-#### Experience.html features
-  - Bitle representing what the page is about.
-  - Bullet points with different dates and positions.
-#### Projects.html features
-  - Title representing what the page is about.
-  - Card showing different projects done, and what languages were used for the particular project.
-#### Contact.html features
-  - Title representing what the page is about.
-  - Card showing different basic contact info like Address, Social Profile,Email and Phone number.
-  -  A traditional Contact form
+  -  Name of the game in a large decorative font, this is the first thing the player see when opening the game.
+  - The main character flying across the page.
+  -  Simple user-friendly icons for the user to navigate easily.
+  - A button to start the game
+  - A footer with icons and links 
+#### game.html features
+  - Title giving instruction.
+  - Level 1 showing 8 cards,
+  - level two with 16 cards, 
+  - level three with 24 cards all identical with the Harry potter theme.
+  - A footer with icons and links 
+  - Top left-hand corner feature a flag poll that counts down to 30s.
+  - Top right of the screen has a harry potter awl carrying mail that shows the game 
+#### contact.html features
+  - Title encoraging user to send a mesage.
+  - A well structured contact form.
+  - A Image representing a buttom that send the mesage
+  - A footer with icons and links 
+#### contact-response.html features
+  - Has a positive message comfirming to the user that their message has been sent.
+  - A botton that redirect the user back home if desired.
+  - A footer with icons and links
+
+#### contact-error-response.html features
+  - Has a message informing the user that their message has not been sent.
+  - A botton that redirect the user back to contact if desired to try again.
+  - A footer with icons and links
+
+  #### 404.html features
+  - Has a message informing the user that the page they are loking for does not exist.
+  - A botton that redirect the user back home if desired.
+  - A footer with icons and links
+
 
 ### Future Feature Considerations
   - For adding future features I would like to implement a login and logout functionality and create a review system that allow users that I work with to leave a review about me.
+
+
+- At the bottom of the screen the player will find the same icons as in the landing page with one extra icon "the sounds icon" to mute and unmute the game.
+- A simple instructions tell the player how to playe the game.
+- The contact me page is uses the same theme as all the other pages.
+- Player are able to easilly write their details and ask their questions to me.
+
+
+
+
+
 
 ## Technologies Used
 
