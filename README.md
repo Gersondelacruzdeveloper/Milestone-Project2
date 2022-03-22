@@ -247,17 +247,7 @@ Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn 
 
 
 ### Future Feature Considerations
-  - For adding future features I would like to implement a login and logout functionality and create a review system that allow users that I work with to leave a review about me.
-
-
-- At the bottom of the screen the player will find the same icons as in the landing page with one extra icon "the sounds icon" to mute and unmute the game.
-- A simple instructions tell the player how to playe the game.
-- The contact me page is uses the same theme as all the other pages.
-- Player are able to easilly write their details and ask their questions to me.
-
-
-
-
+  - For adding future features I would like to implement a login and logout functionality and create a review system that allow users to imform me about improvement they would like to see in the game, I also would like to add more levels, I also would like to add a score board where player can compete to become top scorer.
 
 
 ## Technologies Used
