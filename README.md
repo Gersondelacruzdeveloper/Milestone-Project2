@@ -143,18 +143,17 @@ The main content areas were expressed in similar ways to create consistency acro
 
 ### Surface
 
-##### Desing
+##### Design
 The purpose of the game is aligned with the design: colour, positioning of the icon in the footer, Harry Potter animation, and the way the cards flips that looks real, which is simple, effective, and powerful.
 
-##### Logo
+##### Logo design 
 The logo of the game is the Harry Potter title. Designed in a Harry Potter font that is recognizable across all franchises.
-
 
 ##### Colour Scheme
 
-The colour scheme was chosen in order to convey a simple, clean and visually appealing site.
+The colour scheme for the game was chosen in order to convey excitement, clean and visually appealing site.
 
-<img src="./assets/documentation/portfolio-pallet-colors.png" height="auto%" width="100%" alt="EEE Fitness colour palette" />
+<img src="./assets/documentation/harry-potter-game-pallet-colors.png" height="auto%" width="100%" alt="Harry potter colour palette" />
 
 <sub>*Colour palette created at* [coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff).</sub>
 
