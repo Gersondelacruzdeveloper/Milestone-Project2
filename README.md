@@ -279,6 +279,7 @@ Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn 
 * [Adobe illustrator.](https://www.adobe.com/uk/products/illustrator.html). used to draw all images.
 * [dafont.com](https://www.dafont.com/). used to for the Farry Potter font.
 * [freepik.com](https://www.freepik.com/free-vector/error-404-concept-illustration_7741849.htm#query=404&position=4&from_view=keyword). 404 error image was taken from here.
+* [freesound.org](https://freesound.org/people/f4ngy/sounds/240776/). use for the game sounds.
 
 
 ## Testing
