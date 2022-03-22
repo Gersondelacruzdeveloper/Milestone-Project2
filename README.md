@@ -81,17 +81,18 @@ As a game owner:
 
 ###  Scope
 
-The key features of the portfolio were developed based on the employers or recruiters needs. 
-Employers or recruiters should be able to do the following on the portfolio.
-- View my photo, my name and what I do
-- Print my CV
-- Be able to go to my GitHub profile
-- Be able to go to my LinkedIn profile
-- Send me a message directly with WhatsApp
-- Be able to view my knowledge level in Software development
-- Be able to view my work experience
-- Be able to view the projects I have done
-- Contact me for any enquiries for future employments
+The key features of the game were developed based on the user needs. 
+Users should be able to do the following on the game.
+- Start at a home page and given the option to start the game whenever they want.
+- See all social links on the footer and navigate easily through.
+- Be able to go to my GitHub profile.
+- Be able to go to my LinkedIn profile.
+- Contact me for any enquiries through contact page.
+- Be able mute and unmute the sounds.
+- see a countdown clock.
+- Able to see their game score.
+- See instruction of how to play
+- Be able to matches the cards.
 
 ### Structure
 
