@@ -1,10 +1,11 @@
 
 /* -------------------------------------------------------------------- Variables */
 :root {
-    --gold:#f1bf58;
-    --sun:#fabc11;
-    --black:black;
+    --cream-Can:#f1bf58;
+    --black:#000000;
     --sapling:#ddc9a2;
+    --tree-poppy:#F59A1D;
+    --white:#FFFFFF;
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -22,7 +23,7 @@ html {
 
 body{
     background-image: url("../images/background.png");
-    background-color:var(--gold);
+    background-color:var(--cream-Can);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -34,12 +35,13 @@ body{
 }
 
 
-a{
+a{ 
     text-decoration: none;
     color: var(--black);
 }
-
-
+a:hover{
+    color: var(--tree-poppy)
+}
 
 /* -------------------------------------------------------- Index.html page*/
 
@@ -199,19 +201,16 @@ justify-content: center;
 
 /* -------------------------------------------------------------------- Modals */
 
-.sun-color{
-    color: var(--sun);
-}
 .modal-body{
     text-align: center;
     background-color: var(--sapling);
 }
 .modal-body button{
-    background-color: var(--gold);
+    background-color: var(--cream-Can);
 }
 
 .modal-body button:hover{
-    background-color: var(--sun);
+    background-color: var(--tree-poppy);
 }
 .bold{
     font-weight: bold;
@@ -239,7 +238,7 @@ justify-content: center;
 }
 .form-heading{
     margin-top: 5%;
-    color:var(--concrete);;
+    color:var(--black);;
     text-align:center;
     font-family: 'Dancing Script', cursive;
     font-size:50px;
@@ -250,7 +249,7 @@ justify-content: center;
     margin: 4px 0;
     box-sizing: border-box;
     color: var(--black);
-    background-color: var(--concrete);
+    background-color: transparent;
     font-size:30px;
     height:30px;
     border: none;
@@ -318,19 +317,20 @@ font-size: 30px;
 }
 
 .contact-link{
-    background-color:#fa5b11;
+    background-color:var(--cream-Can);
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
     display: block;
-    width:170px;
+    width:180px;
     margin: 50px auto;
-    color: black;
+    color:var(--black);
+    border:2px solid var(--black);
 }
 
 .contact-link:hover{
-    background-color:#d66f3f;
-    color:black
+    background-color:var(--tree-poppy);
+    color:var(--black)
 }
 
 /* -------------------------------------------------------- Contact error response page */
@@ -410,7 +410,7 @@ footer{
 }
 
 #footer a:hover,i:hover,span:hover{
-    color:#fa5b11;
+    color:var(--tree-poppy);
     cursor: pointer;
 }
 
@@ -547,7 +547,6 @@ footer{
 }
 .form-heading{
     margin-top: 5%;
-    color:var(--concrete);;
     text-align:center;
     font-family: 'Dancing Script', cursive;
     font-size:30px;
