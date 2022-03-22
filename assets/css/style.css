@@ -1,29 +1,28 @@
-
 /* -------------------------------------------------------------------- Variables */
 :root {
-    --cream-Can:#f1bf58;
-    --black:#000000;
-    --sapling:#ddc9a2;
-    --tree-poppy:#F59A1D;
-    --white:#FFFFFF;
+    --cream-Can: #f1bf58;
+    --black: #000000;
+    --sapling: #ddc9a2;
+    --tree-poppy: #F59A1D;
+    --white: #FFFFFF;
 }
 
 /* -------------------------------------------------------------------- Resets */
 
 html {
     width: 100%;
-    
+
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url("../images/background.png");
-    background-color:var(--cream-Can);
+    background-color: var(--cream-Can);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -31,113 +30,139 @@ body{
 }
 
 
-a{ 
+a {
     text-decoration: none;
     color: var(--black);
 }
-a:hover{
+
+a:hover {
     color: var(--tree-poppy)
 }
 
 /* -------------------------------------------------------- Index.html page*/
 
 /*Harry potter flying Animation */
-#flying-animation img{
+#flying-animation img {
     position: absolute;
     animation: flying-harry 10s infinite normal ease;
-    width:150px;
+    width: 150px;
     z-index: 1;
 }
 
 /*Home section*/
-#game-name-img{
+#game-name-img {
     display: block;
-    width:900px;
-    margin-top:150px;
+    width: 900px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#start-btn img{
+#start-btn img {
     margin-top: 5%;
     transform: translateY(-6px);
     z-index: -1;
-    width:250px;
+    width: 250px;
 }
+
 #start-btn img:active {
     transform: translateY(-2px);
-  
+
 }
 
-.wand-container{
- text-align: center;
- margin-top: 20px;
- margin-left: -35%;
+.wand-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -35%;
 }
 
-#wand{
-    width:200px;
+#wand {
+    width: 200px;
 }
 
 /* --------------------------------------------- Animation keyframes*/
 
-@keyframes flying-harry{
-    0% {left:0px; top:0px}
-    25% {top:300px;}
-    50%{top:0px}
-    100% {top:0px; left: 90%;}
+@keyframes flying-harry {
+    0% {
+        left: 0px;
+        top: 0px
+    }
+
+    25% {
+        top: 300px;
+    }
+
+    50% {
+        top: 0px
+    }
+
+    100% {
+        top: 0px;
+        left: 90%;
+    }
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* -------------------------------------------------------------------- Game Page */
 /*header section */
 
-#timer-img{
-   width:200px;
-   position: fixed;
-   top:0;
-   left:0;
-   padding: 20px;
-}
-
-#timer{
+#timer-img {
+    width: 200px;
     position: fixed;
-    font-weight: bolder;
-    font-size: 30px;
-    left:70px;
-    line-height: 100px;
-    top:10px;
-}
-
-#points-img{
-    width:250px;
-    position:fixed ;
-    right:0;
-    top:0;
+    top: 0;
+    left: 0;
     padding: 20px;
 }
 
-#points{
-position: fixed;
-font-weight: bolder;
-font-size: 30px;
-right:70px;
-top:90px;
+#timer {
+    position: fixed;
+    font-weight: bolder;
+    font-size: 30px;
+    left: 70px;
+    line-height: 100px;
+    top: 10px;
 }
 
-#header-instruction-container{
+#points-img {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+}
+
+#points {
+    position: fixed;
+    font-weight: bolder;
+    font-size: 30px;
+    right: 70px;
+    top: 90px;
+}
+
+#header-instruction-container {
     text-align: center;
 }
-#header-instruction-container h2{
+
+#header-instruction-container h2 {
     font-size: 40px;
     font-weight: bold;
     padding: 20px;
@@ -145,199 +170,210 @@ top:90px;
 }
 
 /*card section*/
-#card-container{
-display:grid;
-grid-template-columns:auto auto auto auto;
-justify-content: center;
+#card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
 }
 
 /* Code taken from https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-.flip-card{
-  width: 200px;
-  height:250px;
-  perspective: 1000px;
-  object-fit:cover;
-  transition: transform .5s;
+.flip-card {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.flip-card img{
-    width:100%;
+.flip-card img {
+    width: 100%;
     height: 100%;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-.flip-card-front, 
+.flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .flip-card-front {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* this class is added to the card that match*/
-.turn-over{
+.turn-over {
     transform: rotateY(180deg);
 }
-#toggleBtn{
+
+#toggleBtn {
     background: none;
     border-color: transparent;
 }
 
 /* -------------------------------------------------------------------- Modals */
 
-.modal-body{
+.modal-body {
     text-align: center;
     background-color: var(--sapling);
 }
-.modal-body button{
+
+.modal-body button {
     background-color: var(--cream-Can);
 }
 
-.modal-body button:hover{
+.modal-body button:hover {
     background-color: var(--tree-poppy);
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 /* -------------------------------------------------------------------- Contact page */
 
-.contact-form-container{
+.contact-form-container {
     position: relative;
-    width:500px;
-    height:500px;
+    width: 500px;
+    height: 500px;
     margin: 1% auto;
     border: 10px solid black;
     border-radius: 20px;
     text-align: center;
 }
-#contact-form{
-    margin:20px;
+
+#contact-form {
+    margin: 20px;
 }
 
-#contact-form label{
+#contact-form label {
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
     text-align: right;
 }
-.form-heading{
+
+.form-heading {
     margin-top: 5%;
-    color:var(--black);;
-    text-align:center;
+    color: var(--black);
+    ;
+    text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size:50px;
+    font-size: 50px;
 }
- .input-field[type=text], .input-field[type=email]{
-    width:78%;
+
+.input-field[type=text],
+.input-field[type=email] {
+    width: 78%;
     padding: 20px 10px;
     margin: 4px 0;
     box-sizing: border-box;
     color: var(--black);
     background-color: transparent;
-    font-size:30px;
-    height:30px;
+    font-size: 30px;
+    height: 30px;
     border: none;
     border-bottom: 5px dashed black;
     font-family: 'Dancing Script', cursive;
 }
 
-.extra-message-input[type=text]{
- width:100%;
- padding:20px;
+.extra-message-input[type=text] {
+    width: 100%;
+    padding: 20px;
 }
 
 .input-field[type=text],
-.input-field[type=email]:focus{
+.input-field[type=email]:focus {
     outline: none;
-	box-shadow: none;
-    border:none;
-	border-bottom: 5px dashed black;
+    box-shadow: none;
+    border: none;
+    border-bottom: 5px dashed black;
 }
 
-#message-btn{
+#message-btn {
     background: none;
     border-color: transparent;
 }
-#message-btn img{
+
+#message-btn img {
     margin-top: 5%;
     transform: translateY(-6px);
     z-index: -1;
-    width:200px;
+    width: 200px;
 }
 
 #message-btn img:active {
     transform: translateY(-2px);
-  
+
 }
 
-.feather-container{
+.feather-container {
     position: absolute;
-    top:70%;
+    top: 70%;
     left: 65%;
 }
 
-.feather-container img{
+.feather-container img {
     width: 100px;
 }
 
-.hid-laebel{
+.hid-laebel {
     position: absolute;
-    color:transparent;
+    color: transparent;
 }
+
 /* -------------------------------------------------------------------- Contact response page */
-#contact-response{
-text-align: center;
-margin-top:10%;
+#contact-response {
+    text-align: center;
+    margin-top: 10%;
 }
 
-.heading{
-font-size: 30px;
+.heading {
+    font-size: 30px;
 }
 
-.response-message{
+.response-message {
     color: var(--concrete);
-    width:80%;
-    margin:20px auto;
+    width: 80%;
+    margin: 20px auto;
 }
 
-.contact-link{
-    background-color:var(--cream-Can);
+.contact-link {
+    background-color: var(--cream-Can);
     padding: 15px 32px;
     font-size: 16px;
     cursor: pointer;
     display: block;
-    width:180px;
+    width: 180px;
     margin: 50px auto;
-    color:var(--black);
-    border:2px solid var(--black);
+    color: var(--black);
+    border: 2px solid var(--black);
 }
 
-.contact-link:hover{
-    background-color:var(--tree-poppy);
-    color:var(--black)
+.contact-link:hover {
+    background-color: var(--tree-poppy);
+    color: var(--black)
 }
 
 /* -------------------------------------------------------- Contact error response page */
 
-#contact-error-response{
+#contact-error-response {
     text-align: center;
 }
 
-#contact-error-response{
-    margin-top:10%;
+#contact-error-response {
+    margin-top: 10%;
 }
 
 
@@ -355,100 +391,120 @@ font-size: 30px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     display: none;
-    left:46%;
-    top:30%;
+    left: 46%;
+    top: 30%;
     z-index: 2;
-  }
-  
+}
 
- /* --------------------------------------------- 404 error page */
 
- #error-404-container{
-    width:50%;
+/* --------------------------------------------- 404 error page */
+
+#error-404-container {
+    width: 50%;
     margin: 10% auto;
- }
+}
 
-.card img{
+.card img {
     width: 400px;
-    margin:auto;
+    margin: auto;
 }
 
 /* -------------------------------------------------------- footer section */
-footer{
+footer {
     position: fixed;
     bottom: 0;
-    width:100%;
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
 }
 
-#copyright-container{
-    grid-row:1/1;
+#copyright-container {
+    grid-row: 1/1;
 }
 
-#copyright-container p{
+#copyright-container p {
     font-size: 25px;
     font-weight: bold;
     line-height: 50px;
 }
 
-.social-media-links a, span{
+.social-media-links a,
+span {
     font-size: 40px;
-    color:var(--black);
-    margin:10px;
+    color: var(--black);
+    margin: 10px;
 }
 
 .home-container,
-.home-sounds-container{
+.home-sounds-container {
     text-align: center;
-    grid-row-start:1;
+    grid-row-start: 1;
     grid-column-end: 3;
 }
+
 .home-container i,
-.home-sounds-container i{
+.home-sounds-container i {
     font-size: 40px;
 }
 
 
-#footer a:hover,i:hover,span:hover{
-    color:var(--tree-poppy);
+#footer a:hover,
+i:hover,
+span:hover {
+    color: var(--tree-poppy);
     cursor: pointer;
 }
 
-#toggleBtn{
-    font-size: 40px;  
+#toggleBtn {
+    font-size: 40px;
 }
 
 /* -------------------------------------------------------------------- Media queries */
 /* Big devices (Monitor,computer, from 1983px to 768px) */
 @media only screen and (max-width: 1983px) {
+
     /* ----------------------- Home Page animation media queries */
-  @keyframes flying-harry{
-    0% {left:0px; top:0px}
-    25% {top:300px;}
-    50%{top:0px}
-    100% {top:0px; left: 70%;}
-}
+    @keyframes flying-harry {
+        0% {
+            left: 0px;
+            top: 0px
+        }
+
+        25% {
+            top: 300px;
+        }
+
+        50% {
+            top: 0px
+        }
+
+        100% {
+            top: 0px;
+            left: 70%;
+        }
+    }
 
 }
 
 /* Medium devices (landscape tablets, from 1075px to 768px) */
 @media only screen and (max-width: 1075px) {
+
     /* ----------------------- Game Page media queries */
-    #header-instruction-container h2{
+    #header-instruction-container h2 {
         font-size: 30px;
         margin-top: 10%;
     }
 
-    #game-name-img{
-        width:600px;
+    #game-name-img {
+        width: 600px;
     }
-    .flip-card{
+
+    .flip-card {
         width: 170px;
     }
 
-    #header-instruction-container h2{
+    #header-instruction-container h2 {
         margin-top: 150px;
     }
 
@@ -457,169 +513,193 @@ footer{
 
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
- /* ----------------------- Game Page media queries */
+
+    /* ----------------------- Game Page media queries */
     /* header */
-    #timer{
+    #timer {
         position: fixed;
         font-size: 25px;
-        left:50px;
+        left: 50px;
         line-height: 75px;
-        top:10px;
+        top: 10px;
         z-index: 2;
     }
 
-    #timer-img{
-        width:150px;
+    #timer-img {
+        width: 150px;
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         padding: 20px;
         z-index: 2;
-     }
+    }
 
-     #points{
+    #points {
         position: fixed;
         font-weight: bolder;
         font-size: 25px;
-        right:50px;
-        top:60px;
+        right: 50px;
+        top: 60px;
         z-index: 2;
     }
-     #points-img{
-         width:170px;
-         position:fixed ;
-         top:0;
-         right:0;
-         padding: 20px;
-         z-index: 2;
-     }
 
-     #header-instruction-container h2{
+    #points-img {
+        width: 170px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    #header-instruction-container h2 {
         font-size: 20px;
         margin-top: 30%;
     }
 
-     /* card section */
-     .flip-card {
+    /* card section */
+    .flip-card {
         width: 85px;
         height: 110px;
     }
 
-/* ----------------------- Index.html page media queries*/
+    /* ----------------------- Index.html page media queries*/
     /* home */
-    #game-name-img{
-        width:100%;
-        margin-top:35%;
+    #game-name-img {
+        width: 100%;
+        margin-top: 35%;
         padding: 10px;
     }
 
-    .wand-container{
+    .wand-container {
         text-align: center;
-        margin-top:5%;
+        margin-top: 5%;
         margin-left: -35%;
     }
-       
-    #wand{
-        width:150px;
+
+    #wand {
+        width: 150px;
     }
 
-    #start-btn img{
-        width:150px;
+    #start-btn img {
+        width: 150px;
     }
 
     /* Animation media queries */
-    @keyframes flying-harry  {
-        0% {left:0px; top:0px}
-        25% {top:300px;}
-        50%{top:0px}
-        100% {top:0px; left: 55%;}
+    @keyframes flying-harry {
+        0% {
+            left: 0px;
+            top: 0px
+        }
+
+        25% {
+            top: 300px;
+        }
+
+        50% {
+            top: 0px
+        }
+
+        100% {
+            top: 0px;
+            left: 55%;
+        }
     }
 
-/* ----------------------- Contact Page media queries */
-.contact-form-container{
-    width:300px;
-    height:450px;
-}
-.input-field[type=text], .input-field[type=email]{
-    width:100%;
-    padding: 2px 5px;
-    margin: 0 0;
-    font-size:20px;
-    border-bottom: 4px dashed black;
-}
-.form-heading{
-    margin-top: 5%;
-    text-align:center;
-    font-family: 'Dancing Script', cursive;
-    font-size:30px;
-}
+    /* ----------------------- Contact Page media queries */
+    .contact-form-container {
+        width: 300px;
+        height: 450px;
+    }
 
-.feather-container{
-    position: absolute;
-    top:75%;
-    left: 70%;
-}
+    .input-field[type=text],
+    .input-field[type=email] {
+        width: 100%;
+        padding: 2px 5px;
+        margin: 0 0;
+        font-size: 20px;
+        border-bottom: 4px dashed black;
+    }
 
-.feather-container img{
-    width: 40px;
-}
+    .form-heading {
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
 
-/* ----------------------- Contact response Page media queries */
-#contact-error-response,
-#contact-response{
-    margin-top:30%;
-}
-/* ----------------------------------------- contact spiners media queries*/
+    .feather-container {
+        position: absolute;
+        top: 75%;
+        left: 70%;
+    }
 
-#loader{
-    left:31%;
-}
+    .feather-container img {
+        width: 40px;
+    }
 
+    /* ----------------------- Contact response Page media queries */
+    #contact-error-response,
+    #contact-response {
+        margin-top: 30%;
+    }
 
-/* --------------------------------------------- 404 error page media queries */
+    /* ----------------------------------------- contact spiners media queries*/
 
-#error-404-container{
-    width:90%;
-    margin: 25% auto;
- }
+    #loader {
+        left: 31%;
+    }
 
 
-.card img{
-    width: 50%;
-    margin:auto;
-}
+    /* --------------------------------------------- 404 error page media queries */
+
+    #error-404-container {
+        width: 90%;
+        margin: 25% auto;
+    }
+
+
+    .card img {
+        width: 50%;
+        margin: auto;
+    }
 
 
 
-/* ----------------------- footer media queries*/
-    footer{
+    /* ----------------------- footer media queries*/
+    footer {
         grid-template-columns: auto;
         justify-content: center;
         z-index: -1;
     }
-    #copyright-container p{
+
+    #copyright-container p {
         font-size: 20px;
 
     }
-    
-    #copyright-container{
-        grid-row:2/2;
-        grid-column:1/ 3;
-        width:100%;
+
+    #copyright-container {
+        grid-row: 2/2;
+        grid-column: 1/ 3;
+        width: 100%;
     }
-    .social-media-links a, span{
-        font-size: 30px;
-    }
-    .home-container i,
-    .home-sounds-container i{
+
+    .social-media-links a,
+    span {
         font-size: 30px;
     }
 
-    .home-sounds-container{
+    .home-container i,
+    .home-sounds-container i {
+        font-size: 30px;
+    }
+
+    .home-sounds-container {
         line-height: 40px;
     }
-    .home-container{
+
+    .home-container {
         line-height: 60px;
     }
- 
+
 }
