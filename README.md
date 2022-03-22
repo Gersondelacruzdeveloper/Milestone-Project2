@@ -63,20 +63,21 @@ As a potential site user: :
 - I want to play a game that the colors are atractive to the eyes but not too bright to cause me discomfort.
 - I want to play a game that has link to popular culture. 
 - I want to be able to mute the sounds in case I am in a public place.
-- I want to be able to contact the site owner with any questions.
+- I want to be able to contact the game owner with any questions.
 - I want to be able to see my game score.
 - I want to be challenge and restricted to a countdown clock.
 
-#### Portfolio owner
-I am the portfolio owner:
--	I want to encourage more recruiters and potential employers to contact me.
--	I want to clearly display information about what I do, my skills, and programming languages I know.
--	I want recruiters and potential employers to view if I am currently available.
--	I want recruiters and potential employers to view my LinkedIn page.
--	I want recruiters and potential employers to be able to contact me easily.
--	I want recruiters to be able to print my CV.
-- I want recruiters and potential employers to view my GitHub page.
--	I want to showcase all the projects I have done, which will give then confident of what realistically I can do.
+#### Game owner
+As a game owner:
+- I want to create a game which is entertaining and engaging.
+- I want to create visually appealing design.
+- I want to provide fully responsive and accessible game.
+- I want to create a simple navigation around game.
+- I want the game to have my social links.
+- I want the game to have a countdown clock.
+- I want the game to have score whenever the user matches the card.
+- I want the cards to flip like they do in real life.
+- I want to add icon that can mute and unmute the sounds.
 
 ###  Scope
 
