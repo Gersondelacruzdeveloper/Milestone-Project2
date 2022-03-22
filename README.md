@@ -105,19 +105,14 @@ the following features were chosen:
 - Top right of the screen has a harry potter awl carrying mail that shows the game points.
 - At the bottom of the screen the player will find the same icons as in the landing page with one extra icon "the sounds icon" to mute and unmute the game.
 - A simple instructions tell the player how to playe the game.
-- A contact 
 - The contact me page is uses the same theme as all the other pages.
 - Player are able to easilly write their details and ask their questions to me.
 
 ### Skeleton
 
-The UI wireframing tool, [Balsamiq](https://balsamiq.com/), was used to create wireframes for each site page as it would appear on desktop, tablet and mobile devices.
+The UI wireframing tool, [Balsamiq](https://balsamiq.com/), was used to create wireframes for each page of the game as it would appear on desktop, tablet, and mobile devices.
 
-The main content areas were expressed in similar ways to create consistency across the site.
-
-A title and motivational heading were included at the top of each page.
-To help recruiters and potential employers, navigate through the site efficiently navbar was decided upon for desktop viewers. The smaller, neater 'hamburger' icon with accompanying dropdown menu was chosen to provide mobile and tablet users with a less cluttered screen and therefore, a more pleasant browsing experience.
-A footer, which contains very important information: copy right, link of printable CV, LinkedIn link, GitHub link, and WhatsApp link, all of these were included at the bottom of every page.
+The main content areas were expressed in similar ways to create consistency across the site. A home page featuring the name of the game and a start bottom, a main screen with all cards identical. Top left-hand corner features a flag poll that counts down, top right of the screen shows the game points, a contact page, and a footer, which contains very important information: copy right, LinkedIn link, GitHub link, all of these were included at the bottom of every page to help users navigate through the game efficiently.
 
 <br>
 
