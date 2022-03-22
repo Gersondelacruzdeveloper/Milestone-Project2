@@ -156,7 +156,7 @@ justify-content: center;
 /* Code taken from https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 .flip-card{
   width: 200px;
-  height:227px;
+  height:250px;
   perspective: 1000px;
   object-fit:cover;
   transition: transform .5s;
