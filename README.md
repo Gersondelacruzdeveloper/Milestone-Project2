@@ -189,7 +189,7 @@ They were taken from [Font Awesome](https://fontawesome.com/) and chosen to be s
 
 #### Typography
 
-After an intensive search for the right font, I enconter **Wotfard**, the most used font for technology, this font can be acompany with **sans-serif** in case Wotfard does not load. I have use this font for the body of the website.
+Because the game is composed mostly of images I decided to use simple font **Dancing Script**, this font is a company with **cursive** in case Dancing Script does not load. I have used this font for the form heading and input.
 
 ## Existing Features
 
