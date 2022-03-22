@@ -147,7 +147,8 @@ The main content areas were expressed in similar ways to create consistency acro
 The purpose of the game is aligned with the design: colour, positioning of the icon in the footer, Harry Potter animation, and the way the cards flips that looks real, which is simple, effective, and powerful.
 
 ##### Logo
-The logo was a simple made with CSS by my own, colours, fonts, and spacing, it was experimented and tried several times in order to achieve a colour scheme that suit the entire design also it has a squire circulating around infinite with the meaning of all the time working.
+The logo of the game is the Harry Potter title. Designed in a Harry Potter font that is recognizable across all franchises.
+
 
 ##### Colour Scheme
 
