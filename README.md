@@ -193,7 +193,7 @@ Because the game is composed mostly of images I decided to use simple font **Dan
 
 ## Existing Features
 
-The project consists of five different pages, all of which can be accessed through the menu in the navigation bar.
+The project consists of three main pages, and has a 404.html error page, a response page and error page for for the contact. The three main page can be accessed through the footer icons.
 
 
 **Fabicon**
