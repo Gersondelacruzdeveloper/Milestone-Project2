@@ -287,61 +287,42 @@ Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn 
 Working code snippets were then replicated in the style.css file in [Gitpod](https://www.gitpod.io/). Other solutions for errors were found in the Code Institute [Slack](code-institute-room.slack.com) channels, on [Stack Overflow](https://stackoverflow.com/), on [W3Schools](https://www.w3schools.com) and on [Code Pen](https://codepen.io).
 
   ### Home Page
-The website was regularly tested using the Google Chrome Developer Tools Lighthouse test. During the testing I solved many issues however I still have two main issues according to Chrome Developer tool: 
 
- 1 - The main issue is to do with **Accessibility**, Google Chrome Developer Tools Lighthouse says, "Attribute do not match their role" and point me to a div at the footer. [Image of the issue](assets/documentation/testing/aria-error.png). After trying to figure out this problem and spending days. Decided to temporary delete all the div on the website and run again the Chrome Developer Tools Lighthouse test, afterward I noticed that the developer tool still saying that a div was causing this problem however there were no div. 
- 
-   **Solution 1** 
-  - After discussing the issue with my mentor and tutor **Gurjot Singh** he suggested the issue was because I installed a Software called Grammarly. After removing this software from Google Chrome,  then the Developer Lighthouse Test Scores when to 100%.
+The website was regularly tested using the Google Chrome Developer Tools Lighthouse test. During the testing I highlighted three errors across the site which have since been recitified:
 
+ Erro 1 - "Elements contain focusable descendents" [Image of the issue](assets/documentation/testing/home-error.png)
 
- 2 - The second issue is to do with **Best Practice** on project page giving me 93% of score. [Image of the issue](assets/documentation/testing/aspect-radio-error.png).  Developer tool says "Display images with incorrect aspect ratio" this issue is jut on desktop and do not show on mobile. after searching for some solution on internet I realize that it was an issue with google itself for reference got to [Google chrome Lighthouse issue](https://github.com/GoogleChrome/lighthouse/issues/7643).
+ Erro 2 - "Links do not have dicernible name" [Image of the issue](assets/documentation/testing/accesibility-errors.png)
 
-  **Solution 2** 
+Erro 3 - "Images are not properly size"
 
-  - After discussing the issue with my mentor and tutor **Gurjot Singh** he suggested the issue was because I put a width and height to the image directly and he recommend that as best practice I should adjust the image to the size that I wanted to display and not to put any width and height. I have done that and as expected the original error disappeared. However, the page is still on 93% due to low resolution images. These images have been screenshotting from previous website I have done. And I do not have any other image to put on instead. 
+My game is made of mostly using images. Images are very dificult to get a good score with google chrome, I have try to increase the score by changing the images extension from png to webp or avif as google Chrome Lighthouse recommend to get better score however Safari does not support this file and for does not show the images.
 
-#### Home Desktop
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-home-desktop.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+**Solution Error 1** Added i tag with classes for icons in footer.
 
-#### Home Mobile
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-home-mobile.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+**Solution Error 2** Added aria-label and rel attribute.
+
+**Solution Error 3** Properly size images.
+
+#### Home
+<img src="assets/documentation/testing/after-fixing-bug.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+
+#### Game
+<img src="assets/documentation/testing/game-screenshot-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
 <br>
 
+### contact Page
 
-### Skills Page
+<img src="assets/documentation/testing/contact-screenshoot-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
 
-#### Desktop
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-skills-desktop.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+### Contact response page
+<img src="assets/documentation/testing/contact-response-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
 
-#### Mobile
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-skills-mobile.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+### Contact response error page
+<img src="assets/documentation/testing/contact-error-response.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
 
-
-### Experience Page
-
-#### Desktop
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-experience-desktop.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-#### Mobile
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-experience-mobile.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-
-### Projects Page
-
-#### Desktop
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-projects-desktop.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-#### Mobile
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-projects-mobile.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-### Contact Page
-
-#### Desktop
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-contact-desktop.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-#### Mobile
-<img src="assets/documentation/testing/lighthouse-screenshot/screenshot-lighthouse-contact-mobile.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
+### 404 page
+<img src="assets/documentation/testing/404-page-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
 
 <br>
 
