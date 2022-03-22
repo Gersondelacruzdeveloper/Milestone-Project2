@@ -55,21 +55,17 @@ The project is developed using **HTML**, **CSS** and **JavaScript** with a litle
 
 #### User Stories
 
-#### Potential employer
-I am an employer looking for software developers: 
-- I need to be convinced as to why I should hire this developer. 
-- I want to find out about what projects he has done.
-- I want to find out what programming languages he knows.
-- I want to find out if can contact him.
-- I want to find out if he has a printable CV. 
-- I want to find out if he is currently available.
-- I want to find out what skills does he has.
-- I want to find out if he has any experience in software development.
-- I want to find out what type of developer he is e.g., frontend, backend, full-stack developer.
-- I want to find out if he has a GitHub page.
-- I want to find out if he has a LinkedIn page.
-- I want to find out if I can contact him directly to his number.
-
+#### Potential site user
+As a potential site user: : 
+- I want to play a game that has simple rules. 
+- I want to play a game that is fun and engaging.
+- I want to play a game that show instruction of how to play.
+- I want to play a game that the colors are atractive to the eyes but not too bright to cause me discomfort.
+- I want to play a game that has link to popular culture. 
+- I want to be able to mute the sounds in case I am in a public place.
+- I want to be able to contact the site owner with any questions.
+- I want to be able to see my game score.
+- I want to be challenge and restricted to a countdown clock.
 
 #### Portfolio owner
 I am the portfolio owner:
