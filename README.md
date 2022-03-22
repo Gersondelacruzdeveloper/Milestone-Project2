@@ -360,18 +360,18 @@ The style.css file currently has no errors:
 <br>
 
 ### Manual Testing
-The website has been tested in the following browsers:
+The game has been tested in the following browsers:
 - Chrome Version 85.0.4183.121 
 - Samsung Internet Version 12.0.1.47	
 - Microsoft Edge Version 85.0.564.63 
 - Opera 70
 - Mozilla Firefox 81.0.1
 
-The website works and functions as expected on Samsung Internet, Google Chrome, Microsoft Edge, Opera and Firefox.
+The game works and functions as expected on Samsung Internet, Google Chrome, Microsoft Edge, Opera and Firefox.
 <br>
 
 ### Responsiveness
-The website was tested for responsive design using [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).  
+The game was tested for responsive design using [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools).  
 It was tested, and found to respond appropriately with regard to each of the following:
 
 **Mobile devices:**
@@ -402,26 +402,13 @@ It was tested, and found to respond appropriately with regard to each of the fol
 <br>
 ## Navigation bar (Navbar)
 
-## Navigation bar (Navbar)
+## Navigation in (footer)
 
-All functionality for the Navbar was manualy tested on every page.
+All functionality for the footer was manualy tested on every page.
 
-* Visit all links within the navbar in every possible order to ensure they are functional and route correctly:
-  * Home -> Skills // Home ->  Experience // Home -> Projects //home -> Contact
-  * Skills -> Home // Skills ->  Experience // Skills -> Projects //Skills -> Contact
-  * Experience -> Home // Experience -> Skills // Experience -> Projects //Experience -> Contact
-  * Projects -> Home // Projects -> Skills // Projects -> Experience //Projects -> Contact
-  * Contact -> Home // Contact -> Skills // Contact -> Experience //Contact -> Projects
+* Visit all links within the navbar in every possible order to ensure they are functional and route correctly.
 
-* Ensure the height of the Navbar is a consistent height across each page. 
-* Ensure Navbar elements (logo/links) maintain their position through navigation of the site. 
-* Ensure the navigation links display the appropriate effects when hovered over:
-
-## Footer
-The following functionality were tested on the footer:
-  * On each page, ensure the GitHub / LinkedIn, & WhatsApp links open to the correct webpage, and are opened externally.   
-  * Ensure the Footer appearance is consistent across all pages, and maintains the same height. 
-  * When adjusting the horizontal viewport, ensure the Footer elements' font sizes adjust themselves appropriately.
+* Play the game in every level to ensure the game works as espected.
 
 ## Enquire Form
 *Ensure all placeholders has its appropriate name.
@@ -432,48 +419,16 @@ The following functionality were tested on the footer:
 *Ensure all input request are met before submitting the form.
 *Ensure users or potential employers received the nice and tidy message after submitting the form.
 
-#### New User 
-I am a employer looking to hire a developer: 
-
-&#9745; I want to find out about what projects the developer has done 
-<img src="assets/documentation/testing/project-done.png" height="auto" width="100%" alt="Screenshot of Desktop project done"/>
-
-&#9745; I want to find out what programming languages he knows and what level of the language he has.
-<img src="assets/documentation/testing/language-know.png" height="auto" width="100%" alt="Screenshot of Desktop skills page."/>
-
-<br>
-
-&#9745;I want to find out if can contact him..
-<img src="assets/documentation/testing/contact.png" height="auto" width="100%" alt="Screenshot of Desktop different contact way."/>
-
-<br>
-
-&#9745; I want to find out if he has a printable CV.
-<img src="assets/documentation/testing/printable-cv.png" height="auto" width="100%" alt="Screenshot of link for CV."/>
-
-<br>
-
-&#9745; I want to find out if he has any experience in software development.. 
-<img src="assets/documentation/testing/experience.png" height="auto" width="100%" alt="Screenshot of desktop experience page."/>
-
-<br>
-&#9745; I want to find out what type of developer he is e.g., frontend, backend, full-stack developer.
-<img src="assets/documentation/testing/screenshot-ocupation-developer.png" height="auto" width="100%" alt="Screenshot of desktop ocupation"/>
-
-<br>
-<br>
-
-&#9745; I want to find out if he has a GitHub page.
-<img src="assets/documentation/testing/github-link-screenshot.png" height="auto" width="100%" alt="Screenshot of social profile links."/>
 
 <br>
 <br>
 
 ### Bugs
-  1- **Accessibility** issue  according to Google Chrome Developer Tools Lighthouse 87-91%.
 
-  2- **Best Practice** issue  according to Google Chrome Developer Tools Lighthouse 93%. Just on project page and 100% on mobile.
+No bugs
+
 <br>
+
 ## Deployment
 
 ## How this Project was Deployed
@@ -481,7 +436,7 @@ I am a employer looking to hire a developer:
 This project was deployed to GitHub pages via the following steps:
 
 1. Log into [GitHub](https://GitHub.com/).
-2. From the list of Repositories, select [Milestone-Project1 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project1).
+2. From the list of Repositories, select [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2).
 3. From the Repositories sub-headings, select "Settings".
 4. Under "Options", the first category of settings, scroll down to the GitHub Pages section.
 5. From the dropdown list under the "Source" heading, select "master".
@@ -497,21 +452,21 @@ As this project was developed on the master branch, all changes made to the repo
 2. Install the applicable [GitPod](https://www.gitpod.io/docs/browser-extension/) Browser Extensions for your chosen browser.
 4. Create a [GitHub](https://GitHub.com/join) account. 
 3. Log in to [Gitpod](https://gitpod.io/login/) using your GitHub account.
-4. From the list of Repositories select [Milestone-Project1 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project1)
+4. From the list of Repositories select [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2)
 5. Open the repository in Gitpod:
     * Click the green "Gitpod" icon at the top of the Repository.
 6. A new workspace will open with the current state of the master branch. Any changes made to the master branch after this point will not be automatically updated in your Gitpod Workspace.
 
 ### Cloning the Repository
 
-1. Vsisit this link [Milestone-Project1 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project1).
+1. Vsisit this link [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2).
 2. Click the "Code" dropdown box above the repository's file explorer. 
 3. Under the "Clone" heading, click the "HTTPS" sub-heading.
-4. Click the clipboard icon, or manually copy the text presented: `https://github.com/Gersondelacruzdeveloper/Milestone-Project1.git`
+4. Click the clipboard icon, or manually copy the text presented: `https://github.com/Gersondelacruzdeveloper/Milestone-Project2.git`
 5. Open your preferred IDE (VSCode, Atom, PyCharm, etc).
 6. Ensure your IDE has support for Git, or has the relevant Git extension.
 7. Open the terminal, and create a directory where you would like the Repository to be stored.
-8. Type `git clone` and paste the previously copied text (`https://github.com/Gersondelacruzdeveloper/Milestone-Project1.git`) and press enter.
+8. Type `git clone` and paste the previously copied text (`https://github.com/Gersondelacruzdeveloper/Milestone-Project2.git`) and press enter.
 9. The Repository will then be cloned to your selected directory. 
 
 
@@ -550,7 +505,7 @@ As this project was developed on the master branch, all changes made to the repo
 ]
 * HTML/CSS: Implementation and utilisation of Grid CSS layout was assisted by [W3school](https://www.w3schools.com/css/css_grid.asp).
 
-* CSS: Code Snippet taken from [Code Pen](https://codepen.io/denic/pen/GRoOxbM). The code for the typing animation effect on index.html and modified to have a shading effect and blink just 3 times after phrase is complete.
+* HTML/CSS: code for fliping the card found here and modified acording to my requierments [W3school](https://www.w3schools.com/howto/howto_css_flip_card.asp).
 
 ---
 
