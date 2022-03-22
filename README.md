@@ -508,6 +508,8 @@ As this project was developed on the master branch, all changes made to the repo
 
 * HTML/CSS: code for fliping the card found here and modified acording to my requierments [W3school](https://www.w3schools.com/howto/howto_css_flip_card.asp).
 
+* HTML/CSS: code for spinners W3school](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader2).
+
 ---
 
 ## Acknowledgements
