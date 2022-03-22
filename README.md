@@ -12,7 +12,7 @@ The project is developed using **HTML**, **CSS** and **JavaScript** with a litle
 [View website on GitHub Pages](https://gersondelacruzdeveloper.github.io/Milestone-Project2/)
 
 ## Table of contents
-1. [**User Experience (UX)**](#User-experience)
+1. [**User   (UX)**](#User-experience)
      1. [Strategy](#strategy)
      2. [Scope](#scope)
      3. [Structure](#structure)
@@ -144,7 +144,7 @@ The main content areas were expressed in similar ways to create consistency acro
 ### Surface
 
 ##### Desing
-The purpose of the site is aligned with the design: colour, positioning of the menu, animation, and Branding of myself, which is simple, effective, and powerful.
+The purpose of the game is aligned with the design: colour, positioning of the icon in the footer, Harry Potter animation, and the way the cards flips that looks real, which is simple, effective, and powerful.
 
 ##### Logo
 The logo was a simple made with CSS by my own, colours, fonts, and spacing, it was experimented and tried several times in order to achieve a colour scheme that suit the entire design also it has a squire circulating around infinite with the meaning of all the time working.
