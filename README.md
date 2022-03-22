@@ -184,7 +184,7 @@ The colour scheme for the game was chosen in order to convey excitement, clean a
 
 
 #### Icons
-Icons were used alongside the text within the site in order to help the user to understand the content easier. 
+Icons were used within the site in order to help the user to understand the content easier. 
 They were taken from [Font Awesome](https://fontawesome.com/) and chosen to be self explanatory.
 
 #### Typography
