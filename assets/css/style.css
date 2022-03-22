@@ -297,6 +297,10 @@ justify-content: center;
     width: 100px;
 }
 
+.hid-laebel{
+    position: absolute;
+    color:transparent;
+}
 /* -------------------------------------------------------------------- Contact response page */
 #contact-response{
 text-align: center;
