@@ -402,12 +402,17 @@ footer{
     margin:10px;
 }
 
+.home-container,
 .home-sounds-container{
-    font-size: 40px;
     text-align: center;
     grid-row-start:1;
     grid-column-end: 3;
 }
+.home-container i,
+.home-sounds-container i{
+    font-size: 40px;
+}
+
 
 #footer a:hover,i:hover,span:hover{
     color:var(--tree-poppy);
@@ -597,13 +602,26 @@ footer{
         font-size: 20px;
 
     }
-    .social-media-links a{
-        font-size: 30px;
-    }
-
+    
     #copyright-container{
         grid-row:2/2;
         grid-column:1/ 3;
         width:100%;
     }
+    .social-media-links a, span{
+        font-size: 30px;
+    }
+    .home-container i,
+    .home-sounds-container i{
+        font-size: 30px;
+    }
+
+    .home-sounds-container{
+        line-height: 40px;
+    }
+    .home-container{
+        line-height: 60px;
+    }
+ 
+
 }
