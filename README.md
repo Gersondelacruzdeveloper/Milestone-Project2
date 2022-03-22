@@ -252,7 +252,7 @@ Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn 
 
 ## Technologies Used
 
-* The project was primarily written in HTML and CSS. Small snippets of JavaScript were used to enhance user experience.
+* The project was written in HTML and CSS and JavaScript with litle use of bootstrap 5
 * The project was written and tested in the [Gitpod](https://gitpod.io/) IDE.
 * The project was debugged using [Google Chrome](https://www.google.com/intl/en_uk/chrome/) [Dev Tools](https://developers.google.com/web/tools/chrome-devtools).
 * The project uses [GitHub](https://GitHub.com/) for hosting source code, for utilising git version control, and for hosting the site on GitHub pages.  
@@ -276,6 +276,10 @@ Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn 
 * [Favicon.io](https://favicon.io/favicon-converter/). used to convert the logo to favicon.
 * [designs.ai](https://designs.ai/colors/color-meanings/midnight-blue). used to check colors combinations to achieve beautiful results.
 * [cloudconverted.com](https://cloudconvert.com/png-to-webp). used to convert png images to webp for better performance.
+* [Adobe illustrator.](https://www.adobe.com/uk/products/illustrator.html). used to draw all images.
+* [dafont.com](https://www.dafont.com/). used to for the Farry Potter font.
+* [freepik.com](https://www.freepik.com/free-vector/error-404-concept-illustration_7741849.htm#query=404&position=4&from_view=keyword). 404 error image was taken from here.
+
 
 ## Testing
 
