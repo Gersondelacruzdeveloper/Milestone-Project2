@@ -503,10 +503,17 @@ function positPointsPhones(){
  * Make footer static
  */
 function makeFooterStatic(){
-  if(points === 40){
-    document.getElementsByTagName('footer')[0].style.position = 'static'
-  
+  if(window.innerWidth <= '768'){
+    if(points > 40){
+      document.getElementsByTagName('footer')[0].style.position = 'static';
+    }
+  }else{
+    if(points === 40){
+      document.getElementsByTagName('footer')[0].style.position = 'static';
+    }
+
   }
+
 }
 
 /**
