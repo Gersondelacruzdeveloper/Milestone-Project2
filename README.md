@@ -157,11 +157,9 @@ The colour scheme for the game was chosen in order to convey excitement, clean a
 
 <sub>*Colour palette created at* [coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff).</sub>
 
-- #f2f2f2, Concrete color, also known as decorative concrete, allows traditional grey concrete to be stained and dyed different colors. 
-    - Used in menu to stand out from the background. 
-    - In footer used as background to make a combination with the menu.
-    - Used in sub-title and Paragraph to make a beautiful contrast.
-    - used in the line that simulate moving data.
+- #f1bf58, cream Can color, is usually associated with reverence and humility, in addition to offering warmth and comfort. It is a color that encourages new ideas.
+    - Used the background of every page. 
+    - Use as the background-color of all buttoms.
 
 - #2ec4b6, Turquoise color, the captivating sea-green stone of the ancients, represents wisdom, tranquility, protection, good fortune, and hope. 
     - Used in all titles.
@@ -171,11 +169,19 @@ The colour scheme for the game was chosen in order to convey excitement, clean a
     - Used in menu for hover.
     - Animated btn boder for the contact form.
 
-- #011627, Midnight Blue is a smooth, rich blend of blue and black, reminiscent of the depths of the night sky. Midnight Blue evokes feelings of stability, wisdom, and mystery. Midnight Blue is also considered to be beneficial for the mind and body. It slows down human metabolism and produces a calming effect.
-    - Used as the background color for every pages.
+- #000000, Black color represents evil, darkness, night, and despair. It’s the color used to convey certainty and authority.
+- Used in border of the contact.
+- In the writing and most title and headings.
+- Input fild.
+- Use in all icons.
 
-- #07203a, Black pearls are one of the most mysterious-looking of all colored pearls. Black pearls represent mystery, independence, strength, and riches.
-    - Used as the background of the basic contact card
+- #ddc9a2, Sapling color mean Calm, Elegant, Purity.
+- Use in the background of the modal
+
+- #F59A1D, Tree Poppy  or orange peel color associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, determination, health, stimulation, happiness, fun, enjoyment, balance, sexuality, freedom, expression, and fascination. Orange is the color of joy and creativity.
+
+- Use in for all hover elements.
+
 
 #### Icons
 Icons were used alongside the text within the site in order to help the user to understand the content easier. 
