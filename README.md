@@ -49,13 +49,9 @@ The project is developed using **HTML**, **CSS** and **JavaScript** with a litle
 
 ### Strategy
 
-- The User centred Design process started with the creation of the User Stories.  These influenced subsequent feature, layout, and design decisions.
+- The User centred Design process started with the creation of the User Stories. these influenced subsequent feature, layout, and design decisions.
 
-- The main goal for my portfolio website is to attract new recruiters or potential employers to encourage them to hire me as a developer. 
-
-- The portfolio has been designed to provide minimal, but relevant, content that is easy to access, which satisfies the needs of recruiters or potential employers. 
-
-- Animations have been used extensively throughout the site in order to showcase the results of what I can achieve with my software developing knowledge.
+- The goal of this project was to create an interactive and user-friendly version of the matching cards game.
 
 #### User Stories
 
